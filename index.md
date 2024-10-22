@@ -211,7 +211,7 @@ Namespace: `https://w3id.org/bot#`
 The Building Topology Ontology (BOT)
 
 <figure class="w75">
-  <img data-src="./img/bot-zones.png" alt="Salle d'entrée de l’exposition Feux pâles.">
+  <img data-src="./img/bot-zones.png" alt="Salle d’entrée de l’exposition Feux pâles.">
   <figcaption>Classes and relationships involved in Zones (Rasmussen et al., 2021b)</figcaption>
 </figure>
 
@@ -275,7 +275,7 @@ data-background-image="./img/use-case-00-front.jpeg" data-background-size="auto 
 
 ===vvvvvv===
 
-<!-- What we might need here is the r-stack class with fragments: https://revealjs.com/layout/#stack (but it doesn't work with the need of updating textual content)-->
+<!-- What we might need here is the r-stack class with fragments: https://revealjs.com/layout/#stack (but it doesn’t work with the need of updating textual content)-->
 
 ## Exhibits & Spaces Relationship
 
@@ -363,7 +363,7 @@ The `bot:` namespace: Describing spaces
 ## *Feux pâles*: Préambule
 
 <figure class="w75">
-  <img data-src="./img/use-case-01-preambule.png" alt="Salle d'entrée de l’exposition Feux pâles.">
+  <img data-src="./img/use-case-01-preambule.png" alt="Salle d’entrée de l’exposition Feux pâles.">
   <figcaption>Vue de l’exposition Feux pâles (1990), “Préambule”. Photo. : Frédéric Delpech  ©&#0160;Claire&#0160;Burrus, Paris / Jan Mot, Bruxelles.</figcaption>
 </figure>
 
@@ -484,7 +484,7 @@ The `bot:` namespace: Describing spaces
 ## *Feux pâles*: De la propriété littéraire et artistique
 
 <figure class="w75">
-  <img data-src="./img/use-case-02-parcelle.png" alt="Salle d'entrée de l’expostion Feux pâles.">
+  <img data-src="./img/use-case-02-parcelle.png" alt="Salle d’entrée de l’expostion Feux pâles.">
   <figcaption>
     Vue de l’exposition Feux pâles (1990), salle 10 “De la propriété littéraire et artistique”. Photo.&#0160;: Frédéric Delpech ©&#0160;Claire&#0160;Burrus, Paris / Jan Mot, Bruxelles.
   </figcaption>
@@ -515,7 +515,7 @@ The `bot:` namespace: Describing spaces
 ## *Feux pâles*: Le cabinet d’amateur
 
 <figure class="w75">
-  <img data-src="./img/use-case-03-cabinets.png" alt="Salle d'entrée de l’expostion Feux pâles.">
+  <img data-src="./img/use-case-03-cabinets.png" alt="Salle d’entrée de l’expostion Feux pâles.">
   <figcaption>
     Vue de l’exposition Feux pâles (1990), salle 2 “Le Cabinet d’amateur”. Photo. : Frédéric Delpech ©&#0160;Claire&#0160;Burrus, Paris / Jan Mot, Bruxelles.
   </figcaption>
@@ -547,7 +547,7 @@ The `bot:` namespace: Describing spaces
 ## Topological Relationship Between Exhibits
 
 <figure class="w75">
-  <img data-src="./img/use-case-04-inventaire.png" alt="Salle d'entrée de l’expostion Feux pâles.">
+  <img data-src="./img/use-case-04-inventaire.png" alt="Salle d’entrée de l’expostion Feux pâles.">
   <figcaption>
     Vue de l’exposition Feux pâles (1990), salle 1 “Inventaire du mémorable”. Photo.&#0160;: Frédéric Delpech © ©&#0160;Claire&#0160;Burrus, Paris / Jan Mot, Bruxelles.
   </figcaption>
