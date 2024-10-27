@@ -113,6 +113,64 @@
 
 - Le modèle RDF : triplet, nœud, arête
 
+===vvvvvv===
+
+## Les ontologies : organisation des connaissances dans le web sémantique
+
+Une ontologie est une structure abstraite utilisée pour représenter un domaine de connaissances.
+
+Une ontologie s’organise à la manière d’une [toxonomie](https://fr.wikipedia.org/wiki/Taxonomie_(homonymie)) (une structure de classement hiérarchique : par exemple, la classification des espèces), mais avec plus de **flexibilité**.
+
+Une ontologie est flexible car elle fonctionne comme un [graphe](https://fr.wikipedia.org/wiki/Graphe_(type_abstrait)).
+
+([Blaney 2017](https://programminghistorian.org/en/lessons/intro-to-linked-data))
+
+/** Notes **/
+
+tiré de Blaney :
+
+- modéliser l’information dans un champ d’études
+- réfléchir à la façon dont on peut représenter les relations dans ce champ
+- on utilise une structure de données que l’on appelle une ontologie
+
+> An ontology is an abstraction that allows particular knowledge about the world to be represented.
+> Ontologies, in this sense, are quite new and they were designed to do what a hiearchical [taxonomy](https://en.wikipedia.org/wiki/Taxonomy) does (think of the classification of species in the [Linnaean system](https://en.wikipedia.org/wiki/Linnaean_taxonomy)), but more flexibly.
+
+===vvvvvv===
+
+## Les ontologies
+
+<div style="display: flex">
+  <div class="flex-1">
+<p>De la hiérarchie au graphe :</p>
+
+- descriptions et représentions plus fluides
+- mises en relation plus complexes des objets
+  </div>
+  <div class="flex-1">
+    <figure>
+      <img style="margin-top: 0;" data-src="./img/example-01-directed-graph.svg" alt="Exemple de graphe orienté acyclique">
+      <figcaption>
+        Exemple de graphe orienté acyclique (<a href="https://commons.wikimedia.org/wiki/File:Directed_acyclic_graph.svg">publié dans le domaine public par David W.</a>)
+      </figcaption>
+    </figure>
+  </div>
+  
+</div>
+
+/** Notes **/
+
+> An ontology is more flexible because it is non-hierarchical.
+> It aims to represent the fluidity of the real world, where things can be related to each other in more complex ways than are represented by a hierarchical tree-like structure.
+> Instead, an ontology is more like a spider’s web.
+
+===vvvvvv===
+
+## Comment s’organise une ontologie ?
+
+- avec des **classes** qui représentent des **concepts**
+- avec des **proprités** qui représentent les **relations** entre les concepts
+
 
 ===>>>>>>===
 
