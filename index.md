@@ -100,9 +100,19 @@
 
 # Le web sémantique
 
+<figure>
+  <img data-src="./img/sem-web-layercake.png" alt="La pile technologique du web sémantique">
+  <figcaption>
+    La pile technologique du web sémantique.
+  </figcaption>
+</figure>
+
 ===vvvvvv===
 
 ## Le web sémantique en 5 minutes
+
+- Le modèle RDF : triplet, nœud, arête
+
 
 ===>>>>>>===
 
