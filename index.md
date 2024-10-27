@@ -1,3 +1,4 @@
+<!-- ’ -->
 <style display="none">
 .flex-1 {
   flex: 1;
@@ -28,7 +29,7 @@
 }
 </style>
 
-# [Atelier Display] Documenting exhibition and collection displays: an ontological approach
+# Atelier Display : documenter des accrochages de collection à l’aide d’une approche ontologique
 
 **Zoë&#0160;Renaudie, David&#0160;Valentine et Emmanuel Château-Dutier**
 
