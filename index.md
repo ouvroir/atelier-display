@@ -1,5 +1,8 @@
 <!-- ’ -->
 <style display="none">
+.flex {
+  display: flex;
+}
 .flex-1 {
   flex: 1;
 }
@@ -35,7 +38,7 @@
 
 28 ocotobre 2024
 
-<div class="logos" style="display: flex">
+<div class="logos flex">
   <div class="flex-1">
     <img id="cieco" src="./img/logo-cieco-grey.svg" style="height: 2.3em;">
   </div>
@@ -140,12 +143,12 @@ tiré de Blaney :
 
 ## Les ontologies
 
-<div style="display: flex">
+<div class="flex">
   <div class="flex-1">
-<p>De la hiérarchie au graphe :</p>
+    <p>De la hiérarchie au graphe :</p>
 
-- descriptions et représentions plus fluides
-- mises en relation plus complexes des objets
+  - descriptions et représentions plus fluides
+  - mises en relation plus complexes des objets
   </div>
   <div class="flex-1">
     <figure>
@@ -155,7 +158,6 @@ tiré de Blaney :
       </figcaption>
     </figure>
   </div>
-  
 </div>
 
 /** Notes **/
@@ -475,7 +477,7 @@ The `bot:` namespace: Describing spaces
 
 `bot:intersectsZone`: Intersecting Zones
 
-<div style="display: flex">
+<div class="flex">
   <div class="flex-1">
     <figure>
       <img data-src="./img/plan-intersections-couloir.png" alt="Détail du plan de l’exposition Feux pâles au CAPC, galerie Foy.">
@@ -495,7 +497,7 @@ The `bot:` namespace: Describing spaces
 
 `bot:intersectsZone`: Intersecting Zones
 
-<div style="display: flex">
+<div class="flex">
   <div class="flex-1">
     <figure>
       <img data-src="./img/plan-intersections-spaces.png" alt="Détail du plan de l’exposition Feux pâles au CAPC, galerie Foy.">
@@ -515,7 +517,7 @@ The `bot:` namespace: Describing spaces
 
 `display:hasExhibitionSpace`: Space contains space
 
-<div style="display: flex">
+<div class="flex">
   <div class="flex-1">
     <figure>
       <img data-src="./img/plan-inventaire-01.png" alt="Détail du plan de l’exposition Feux pâles au CAPC, galerie Foy.">
@@ -535,7 +537,7 @@ The `bot:` namespace: Describing spaces
 
 `display:hasExhibitionSpace`: Space contains space
 
-<div style="display: flex">
+<div class="flex">
   <div class="flex-1">
     <figure>
       <img data-src="./img/plan-inventaire-02.png" alt="Détail du plan de l’exposition Feux pâles au CAPC, galerie Foy.">
@@ -555,7 +557,7 @@ The `bot:` namespace: Describing spaces
 
 `display:adjacentExhibit:`: Spaces share element
 
-<div style="display: flex">
+<div class="flex">
   <div class="flex-1">
     <figure>
       <img data-src="./img/plan-inventaire-03.png" alt="Détail du plan de l’exposition Feux pâles au CAPC, galerie Foy.">
@@ -586,7 +588,7 @@ The `bot:` namespace: Describing spaces
 
 `display:intersectingExhibit`: Exhibit spans spaces
 
-<div style="display: flex">
+<div class="flex">
   <div class="flex-1">
     <figure>
       <img data-src="./img/plan-parcelle.png" alt="Détail du plan de l’exposition Feux pâles au CAPC, galerie Foy.">
@@ -618,7 +620,7 @@ The `bot:` namespace: Describing spaces
 
 `display:faces`: vis-à-vis exhibits
 
-<div style="display: flex">
+<div class="flex">
   <div class="flex-1">
     <figure>
       <img data-src="./img/use-case-03-cabinets.png" alt="Détail du plan de l’exposition Feux pâles au CAPC, galerie Foy.">
@@ -709,7 +711,7 @@ Focusing on the expographic configuration `but` compatible with CIDOC-CRM
 - Display ontology <br/>[https://ouvroir.github.io/display-ontology/](https://ouvroir.github.io/display-ontology/)
 - [ouvroir.umontreal.ca](https://ouvroir.umontreal.ca)
 
-<div class="logos" style="display: flex">
+<div class="logos" class="flex">
   <div class="flex-1">
     <img style="height: 1.7em" src="./img/logo-cfi.svg">
   </div>
