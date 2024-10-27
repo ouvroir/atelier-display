@@ -171,6 +171,27 @@ tiré de Blaney :
 - avec des **classes** qui représentent des **concepts**
 - avec des **proprités** qui représentent les **relations** entre les concepts
 
+===vvvvvv===
+
+## La modélisation par classes
+
+- Concepts
+- Individus partagent caractéristiques
+- Organisation hiérarchique
+- Système d’héritage
+
+===vvvvvv===
+
+## L’approche associative
+
+- Associations (relations) entre les membres des classes
+- Transversal à la hiérarchie de la modélisation par classe
+
+===vvvvvv===
+
+## Les ontologies : des classes et des relations
+
+Les ontologies combinent une approche taxonomique (classement des individus dans une hiérarchie) avec une approche associative (définition des relations entre les membres des classes), nous permettant de créer des modèles complexes et flexibles.
 
 ===>>>>>>===
 
@@ -717,4 +738,5 @@ Focusing on the expographic configuration `but` compatible with CIDOC-CRM
   <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft.type=standard&amp;rft.title=Building%20Topology%20Ontology&amp;rft.identifier=https%3A%2F%2Fw3c-lbd-cg.github.io%2Fbot%2F&amp;rft.aufirst=Mads%20Holten&amp;rft.aulast=Rasmussen&amp;rft.au=Mads%20Holten%20Rasmussen&amp;rft.au=Pieter%20Pauwels&amp;rft.au=Maxime%20Lefran%C3%A7ois&amp;rft.au=Georg%20Ferdinand%20Schneider&amp;rft.date=2021-06-28"></span>
   <div class="csl-entry">Renaudie, Z. (2019). <em>Le monde de <em>Feux pâles</em>, l’exposition à l’épreuve de la conservation-restauration, tome I</em> [Mémoire Master II, École supérieure d’art d’Avignon]. <a href="https://www.academia.edu/40627194/Renaudie_Zo%C3%AB_Le_monde_de_Feux_p%C3%A2les_lexposition_%C3%A0_l%C3%A9preuve_de_la_conservation_restauration_TOME_I">https://www.academia.edu/40627194/Renaudie_Zoë_Le_monde_de_Feux_pâles lexposition_à_l’épreuve_de_la_conservation_restauration_TOME_I</a></div>
   <span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adissertation&amp;rft.title=Le%20monde%20de%20%3Cem%3EFeux%20p%C3%A2les%3C%2Fem%3E%2C%20l%26%2339%3Bexposition%20%C3%A0%20l%26%2339%3B%C3%A9preuve%20de%20la%20conservation-restauration%2C%20tome%20I&amp;rft.aufirst=Zo%C3%AB&amp;rft.aulast=Renaudie&amp;rft.au=Zo%C3%AB%20Renaudie&amp;rft.date=2019&amp;rft.language=fr"></span>
+  Blaney
 </div>
