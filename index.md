@@ -67,17 +67,11 @@
 
 # Accueil et introduction
 
-===vvvvvv===
 
-Dia
-
-===vvvvvv===
-
-Dia
 
 ===>>>>>>===
 
-# Le projet Display
+## Le projet Display
 
 ===vvvvvv===
 
@@ -86,14 +80,33 @@ Dia
 ### Nouveaux usages des collections dans les musées d’art
 
 - Partenariat CRSH
-- ~20 chercherus, 6 musées canadiens
+- ~20 chercheurs, 6 musées canadiens
 - Axe 1 : *La collection exposée* (Marie Fraser dir.)
 - [www.cieco.co](https://www.cieco.co)
 
-### Ouvoir d’histoire de l’art et de muséologie numériques
+### Ouvroir d’histoire de l’art et de muséologie numériques
 
 - Laboratoire destiné à supporter la recherche
 - [ouvroir.umontreal.ca](https://ouvroir.umontreal.ca)
+
+===vvvvvv===
+
+## Chronologie
+
+2021 : définition des besoins avec les acteurs de l’axe 1
+2022 : étude des outils existants
+2023 : développement de l'ontologie
+2024 : cahier des charges fonctionnel
+2025 : développement de l'application
+
+===vvvvvv===
+
+## Présentation colloque
+
+- Journée d’étude CIECO 2023, Réflexions pour un modèle de documentation des accrochages de collection (Marie + Emmanuel + Lena)
+- vitrine du CRIHN : présentation des premières expérimentations : démo de visualisation et de requêtes SPARQL
+- DHNB2024 Reykjavik : présentation du projet Display
+- DH2024 : présentation de l’ontologie Display
 
 ===vvvvvv===
 
@@ -109,7 +122,7 @@ Dia
 
 ===>>>>>>===
 
-# Le web sémantique
+# L'ontologie Display
 
 <figure>
   <img data-src="./img/sem-web-layercake.png" alt="La pile technologique du web sémantique">
@@ -278,11 +291,11 @@ A perspective on the exhibition based on:
 
 ===>>>>>>===
 
-# Interface
+# L'application Display
 
 ===vvvvvv===
 
-## L'application Display
+## Interface
 
 - Une interface graphique permettant aux historiens de l'art d'alimenter l'ontologie
 - recueillir des informations historiques et formuler des hypothèses
@@ -328,9 +341,25 @@ A perspective on the exhibition based on:
 ## Exemples d'interfaces
 
 - Base de données TMS, Mimsy...
-- Sketchup, Acrobat
-- Scratch
-- Kitchen planner
+
+![Axiell](./img/narratives-emu-1.png)
+
+===vvvvvv===
+
+- Sketchup, Autocad
+
+![SketchUp](./img/lo-3000193-MacInterface.png)
+
+===vvvvvv===
+
+- [Scratch](https://scratch.mit.edu/)
+
+===vvvvvv===
+
+- [Kitchen planner](https://kitchen.planner.ikea.com/planner/#/ca/en/)
+
+===vvvvvv===
+
 - Visualisation abstraite
 
 ===vvvvvv===
