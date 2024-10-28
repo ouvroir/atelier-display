@@ -93,9 +93,9 @@
 
 2021 : définition des besoins avec les acteurs de l’axe 1
 2022 : étude des outils existants
-2023 : développement de l'ontologie
+2023 : développement de l’ontologie
 2024 : cahier des charges fonctionnel
-2025 : développement de l'application
+2025 : développement de l’application
 
 ===vvvvvv===
 
@@ -119,16 +119,6 @@
 **Jusqu’à présent, pas de modèle spécialisé pour la documentation des expositions ou des accrochages**
 
 ===>>>>>>===
-
-# L'ontologie Display
-
-<figure>
-  <img data-src="./img/sem-web-layercake.png" alt="La pile technologique du web sémantique">
-  <figcaption>
-    La pile technologique du web sémantique.
-  </figcaption>
-</figure>
-===vvvvvv===
 
 ## Tout ce que vous n’avez jamais voulu savoir sur le web sémantique sans jamais le demandé...
 
@@ -345,13 +335,13 @@ A perspective on the exhibition based on:
 
 ===>>>>>>===
 
-# L'application Display
+# L’application Display
 
 ===vvvvvv===
 
 ## Interface
 
-- Une interface graphique permettant aux historiens de l'art d'alimenter l'ontologie
+- Une interface graphique permettant aux historiens de l’art d’alimenter l’ontologie
 - recueillir des informations historiques et formuler des hypothèses
 - générer un rendu de visualisation 3D et simplifié
 
@@ -392,7 +382,7 @@ A perspective on the exhibition based on:
 
 ===vvvvvv===
 
-## Exemples d'interfaces
+## Exemples d’interfaces
 
 - Base de données TMS, Mimsy...
 
