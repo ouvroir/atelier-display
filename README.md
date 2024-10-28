@@ -2,7 +2,7 @@
 
 Sources des diapositives de l’atelier sur Display, 28 octobre 2024, Ouvroir d’histoire de l’art et de muséologie numériques.
 
-# Mode d'emploi (source MD)
+# Diapositives : mode d’emploi pour travailler avec la source MD
 
 Titre de niveau 1 (#) : pour les colonnes de diapositives.
 
@@ -36,6 +36,9 @@ Suivi d’un titre de niveau 1. Il est possible de n’afficher que le titre de 
 
 ```
 /** Notes **/
+
+- bla
+- bla
 ```
 
 ## Modèles
