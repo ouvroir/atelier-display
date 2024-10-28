@@ -331,6 +331,8 @@ A perspective on the exhibition based on:
 
 Tractr
 
+![tractr](./img/tractr.png)
+
 ===>>>>>>===
 
 # Atelier : décrire la topologie d’une exposition à l’aide de l’ontologie Display
