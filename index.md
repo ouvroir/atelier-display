@@ -56,6 +56,10 @@
 
 ===vvvvvv===
 
+# Accueil et introduction
+
+===>>>>>>===
+
 ## Programme
 
 1. Accueil et introduction
@@ -65,13 +69,7 @@
 
 ===>>>>>>===
 
-# Accueil et introduction
-
-
-
-===>>>>>>===
-
-## Le projet Display
+# Le projet Display
 
 ===vvvvvv===
 
@@ -130,12 +128,68 @@
     La pile technologique du web sémantique.
   </figcaption>
 </figure>
+===vvvvvv===
+
+## Tout ce que vous n’avez jamais voulu savoir sur le web sémantique sans jamais le demandé...
 
 ===vvvvvv===
 
-## Le web sémantique en 5 minutes
+## Web de documents vs web de données
 
-- Le modèle RDF : triplet, nœud, arête
+![webDeDonnees](./img/webDeDonnees.png)
+
+===vvvvvv===
+
+![Rdf](./img/rdf01.png)
+
+===vvvvvv===
+
+![Rdf](./img/rdf02.png)
+
+===vvvvvv===
+
+![Rdf](./img/rdf03.png)
+
+===vvvvvv===
+
+![Rdf](./img/rdf04.png)
+
+===vvvvvv===
+
+![Rdf](./img/rdf04.png)
+
+===vvvvvv===
+
+![Rdf](./img/rdf05.png)
+
+===vvvvvv===
+
+![Rdf](./img/rdf06.png)
+
+===vvvvvv===
+
+![Rdf](./img/rdf07.png)
+
+===vvvvvv===
+
+![Rdf](./img/rdf08.png)
+
+===vvvvvv===
+
+![Rdf](./img/rdf09.png)
+
+===vvvvvv===
+
+![Rdf](./img/rdf10.png)
+
+===vvvvvv===
+
+<figure>
+  <img data-src="./img/sem-web-layercake.png" alt="La pile technologique du web sémantique">
+  <figcaption>
+    La pile technologique du web sémantique.
+  </figcaption>
+</figure>
 
 ===vvvvvv===
 
