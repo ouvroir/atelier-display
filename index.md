@@ -408,13 +408,13 @@ A perspective on the exhibition based on:
 
 - [Scratch](https://scratch.mit.edu/)
 
-![Scratch](./img/Capture2024-10-28 10-48-04.png)
+![Scratch](./img/scratch.png)
 
 ===vvvvvv===
 
 - [Kitchen planner](https://kitchen.planner.ikea.com/planner/#/ca/en/)
 
-![ikea](./img/Capture2024-10-28 10-49-11.png)
+![ikea](./img/ikea.png)
 
 ===vvvvvv===
 
