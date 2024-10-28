@@ -56,39 +56,11 @@
 
 ===vvvvvv===
 
-## Context of the project
-
-### New uses of collections in art museums
-
-- SSHRC Partnership
-- ~20 researchers, 6 canadian museums
-- First axis : *Exhibited Collections* (Marie Fraser dir.)
-- [www.cieco.co](https://www.cieco.co)
-
-### Ouvoir d’histoire de l’art et de muséologie numériques
-
-- Digital lab to support the research
-- [ouvroir.umontreal.ca](https://ouvroir.umontreal.ca)
-
-===vvvvvv===
-
-## Cultural heritage documentation models
-
-- [CIDOC-CRM](http://www.cidoc-crm.org)
-- [CRMgeo](doi:[10.1007/s00799-016-0192-4](https://doi.org/10.1007/s00799-016-0192-4).): A Spatiotemporal Extension of CIDOC-CRM
-- Art Tracks http://www.museumprovenance.org
-- [OntoExhibit](https://complexhibit-project.github.io/OntoExhibit/index-en.html) (other presentation in this conference)
-- [CRMaaa ontology](https://ontome.net/namespace/246)
-
-**to date, there is no specialized model for the documentation of exhibition or collection diplays**
-
-===vvvvvv===
-
 ## Programme
 
 1. Accueil et introduction
-1. Le web sémantique
-1. Interface
+1. L’ontologie Display
+1. L’application Display
 1. Atelier
 
 ===>>>>>>===
@@ -97,7 +69,43 @@
 
 ===vvvvvv===
 
-## Lorem
+Dia
+
+===vvvvvv===
+
+Dia
+
+===>>>>>>===
+
+# Le projet Display
+
+===vvvvvv===
+
+## Contexte du projet
+
+### Nouveaux usages des collections dans les musées d’art
+
+- Partenariat CRSH
+- ~20 chercherus, 6 musées canadiens
+- Axe 1 : *La collection exposée* (Marie Fraser dir.)
+- [www.cieco.co](https://www.cieco.co)
+
+### Ouvoir d’histoire de l’art et de muséologie numériques
+
+- Laboratoire destiné à supporter la recherche
+- [ouvroir.umontreal.ca](https://ouvroir.umontreal.ca)
+
+===vvvvvv===
+
+## Les modèles de documentation patrimoniaux
+
+- [CIDOC-CRM](http://www.cidoc-crm.org)
+- [CRMgeo](doi:[10.1007/s00799-016-0192-4](https://doi.org/10.1007/s00799-016-0192-4).): A Spatiotemporal Extension of CIDOC-CRM
+- Art Tracks http://www.museumprovenance.org
+- [OntoExhibit](https://complexhibit-project.github.io/OntoExhibit/index-en.html)
+- [CRMaaa ontology](https://ontome.net/namespace/246)
+
+**Jusqu’à présent, pas de modèle spécialisé pour la documentation des expositions ou des accrochages**
 
 ===>>>>>>===
 
