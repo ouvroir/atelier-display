@@ -149,7 +149,7 @@ tiré de Blaney :
 
   - descriptions et représentions plus fluides
   - mises en relation plus complexes des objets
-  </div>
+    </div>
   <div class="flex-1">
     <figure>
       <img style="margin-top: 0;" data-src="./img/example-01-directed-graph.svg" alt="Exemple de graphe orienté acyclique">
@@ -274,11 +274,62 @@ A perspective on the exhibition based on:
 
 ===vvvvvv===
 
-## The Display Application
+## L'application Display
 
-- A GUI for art historians to populate the ontology
-- gathering historical information and formulating hypotheses
-- generating 3D and simplified visualisation rendering
+- Une interface graphique permettant aux historiens de l'art d'alimenter l'ontologie
+- recueillir des informations historiques et formuler des hypothèses
+- générer un rendu de visualisation 3D et simplifié
+
+===vvvvvv===
+
+## Personnae
+
+- l’auxiliaire de recherche 
+- le chercheur principal
+- le commissaire d’exposition
+
+===vvvvvv===
+
+## Analyse des besoins
+
+- Recherche dans des archives d’exposition
+- Documentation lacunaire
+- Comparaison d’accrochages d’une œuvre dans plusieurs projets
+- Préparation d’une exposition
+
+===vvvvvv===
+
+## Objectifs
+
+- Importer des listes d’œuvres directement depuis vos archives.
+- Travailler sur les espaces d’exposition, même si vous ne disposez pas toujours de plans exacts ou complets.
+- Localiser les œuvres dans les espaces, et visualiser comment elles étaient disposées.
+- Créer des hypothèses sur la base des informations disponibles, et explorer différentes configurations possibles.
+
+===vvvvvv===
+
+## Fonctionnalités principales
+
+- Importation et gestion des œuvres
+- Modélisation des espaces d’exposition
+- Positionnement des œuvres
+- Visualisation des hypothèses
+
+===vvvvvv===
+
+## Exemples d'interfaces
+
+- Base de données TMS, Mimsy...
+- Sketchup, Acrobat
+- Scratch
+- Kitchen planner
+- Visualisation abstraite
+
+===vvvvvv===
+
+## Prestataire
+
+Tractr
 
 ===>>>>>>===
 
