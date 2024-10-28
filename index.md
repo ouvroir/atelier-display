@@ -274,52 +274,40 @@ A perspective on the exhibition based on:
 
 ===vvvvvv===
 
-## Handling Description of Space
+## The Display Application
 
-The Building Topology Ontology (BOT)
-
-<figure class="w75">
-  <img data-src="./img/bot-zones.png" alt="Salle d’entrée de l’exposition Feux pâles.">
-  <figcaption>Classes and relationships involved in Zones (Rasmussen et al., 2021b)</figcaption>
-</figure>
-
-===vvvvvv===
-
-## The `bot:` & `display:` Alignment Strategy
-
-![Alignment](./img/ontology-02-alignment.png)
-
-===vvvvvv===
-
-## Handling Tolopogical Relationships
-
-![Tolopogical Relationships](./img/ontology-03-1-bot-display.png)
-
-===vvvvvv===
-
-## Handling Tolopogical Relationships
-
-![Tolopogical Relationships](./img/ontology-03-bot-display.png)
-
-===vvvvvv===
-
-## Handling Tolopogical Relationships
-
-![Tolopogical Relationships](./img/ontology-03-topology.png)
-
-===vvvvvv===
-
-## Linkage with CIDOC and heritage ontologies
-
-![CIDOC](./img/ontology-041-cidoc.png)
-
-===vvvvvv===
-
-## Linkage with CIDOC and heritage ontologies
-
-![CIDOC](./img/ontology-04-cidoc.png)
+- A GUI for art historians to populate the ontology
+- gathering historical information and formulating hypotheses
+- generating 3D and simplified visualisation rendering
 
 ===>>>>>>===
+
+# Atelier : décrire la topologie d’une exposition à l’aide de l’ontologie Display
+
+===vvvvvv===
+
+## But de l’atelier
+
+Comparer la proposition conceptuelle de l’ontologie Display à une description commune de la topologie d’une expostion.
+
+===vvvvvv===
+
+## L’ontologie Display plus en détail
+
+- parler
+
+===vvvvvv===
+
+## Rôles
+
+- Auditoire : description d’une exposition
+- Ouvroir : encodage de l’information
+
+===vvvvvv===
+
+## Use Case: *Feux pâles*
+
+===vvvvvv===
 
 <style>
   .reveal #credits {
@@ -337,13 +325,7 @@ data-background-image="./img/use-case-00-front.jpeg" data-background-size="auto 
 
 <div id="credits">Photo. : Frédéric Delpech ©&#0160;Claire&#0160;Burrus, Paris / Jan Mot, Bruxelles.</div>
 
-/** Notes **/
-
-# Use Case: *Feux pâles*
-
 ===vvvvvv===
-
-<!-- What we might need here is the r-stack class with fragments: https://revealjs.com/layout/#stack (but it doesn’t work with the need of updating textual content)-->
 
 ## Exhibits & Spaces Relationship
 
@@ -659,11 +641,133 @@ The `bot:` namespace: Describing spaces
 
 ===>>>>>>===
 
-# Conclusion
+# A spatial perspective on the exhibition
+
+<!-- @todo check take -->
 
 ===vvvvvv===
 
-## Conclusion
+<!-- .slide: data-visibility="hidden" -->
+
+## 3D for Historical Reconstruction
+
+<iframe width="900" height="506.25" src="https://www.youtube.com/embed/XCqiSbplATU?si=tMcEuk9Lycfnties&amp;start=47" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<p style="font-size: 0.6em">Das Städel museum in 3D, Ihr Virtueller Besuch im Jahr 1878 <a href="http://zeitreise.staedelmuseum.de/vr-app/">http://zeitreise.staedelmuseum.de/vr-app/</a></p>
+
+===vvvvvv===
+
+<!-- .slide: data-visibility="hidden" -->
+
+## From 3D to a documentation model
+
+In our use case
+
+- archival and visual sources are essentials
+- limited constructive evidence (*vs* archeology)
+
+**➜ a spatial documentation model independant of any visualisation techniques**
+
+- data exchange and long-term preservation
+- various applications
+- 3D visualisations
+
+
+
+===>>>>>>===
+
+# The Display Ontology
+
+===vvvvvv===
+
+## Ontological Core
+
+A perspective on the exhibition based on:
+
+- concept of *Exhibit*
+- spatial logics (definition of abstract topological relationships)
+
+===vvvvvv===
+
+## The Main Conceptualization
+
+- everything takes place in exhibition spaces
+- every exhibition entity (artistic or technical) is an *Exhibit*
+
+/** Notes **/
+
+- And that is the conceptualization we want to share with the museology community using the semantic web tools.
+
+===vvvvvv===
+
+## The Exhibit Class
+
+`display:Exhibit`
+
+![The exhibit class instatiation](./img/ontology-00-display.png)
+
+===vvvvvv===
+
+## Handling Description of Space
+
+Reusing the Building Topology Ontology
+
+> The Building Topology Ontology (BOT) is a minimal OWL DL ontology for defining relationships between the sub-components of a building.<br><br>
+> (Rasmussen et al., 2021b)
+
+Specification: https://w3c-lbd-cg.github.io/bot/
+Namespace: `https://w3id.org/bot#`
+
+===vvvvvv===
+
+## Handling Description of Space
+
+The Building Topology Ontology (BOT)
+
+<figure class="w75">
+  <img data-src="./img/bot-zones.png" alt="Salle d’entrée de l’exposition Feux pâles.">
+  <figcaption>Classes and relationships involved in Zones (Rasmussen et al., 2021b)</figcaption>
+</figure>
+
+===vvvvvv===
+
+## The `bot:` & `display:` Alignment Strategy
+
+![Alignment](./img/ontology-02-alignment.png)
+
+===vvvvvv===
+
+## Handling Tolopogical Relationships
+
+![Tolopogical Relationships](./img/ontology-03-1-bot-display.png)
+
+===vvvvvv===
+
+## Handling Tolopogical Relationships
+
+![Tolopogical Relationships](./img/ontology-03-bot-display.png)
+
+===vvvvvv===
+
+## Handling Tolopogical Relationships
+
+![Tolopogical Relationships](./img/ontology-03-topology.png)
+
+===vvvvvv===
+
+## Linkage with CIDOC and heritage ontologies
+
+![CIDOC](./img/ontology-041-cidoc.png)
+
+===vvvvvv===
+
+## Linkage with CIDOC and heritage ontologies
+
+![CIDOC](./img/ontology-04-cidoc.png)
+
+===>>>>>>===
+
+# Conclusion
 
 The Display ontology
 
