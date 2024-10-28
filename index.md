@@ -91,20 +91,20 @@
 
 ## Chronologie
 
-2021 : définition des besoins avec les acteurs de l’axe 1
-2022 : étude des outils existants
-2023 : développement de l’ontologie
-2024 : cahier des charges fonctionnel
-2025 : développement de l’application
+- 2021 : définition des besoins avec les acteurs de l’axe 1
+- 2022 : étude des outils existants
+- 2023 : développement de l’ontologie
+- 2024 : cahier des charges fonctionnel
+- 2025 : développement de l’application
 
 ===vvvvvv===
 
 ## Présentation colloque
 
 - Journée d’étude CIECO 2023, Réflexions pour un modèle de documentation des accrochages de collection (Marie + Emmanuel + Lena)
-- vitrine du CRIHN : présentation des premières expérimentations : démo de visualisation et de requêtes SPARQL
-- DHNB2024 Reykjavik : présentation du projet Display
-- DH2024 : présentation de l’ontologie Display
+- vitrine du CRIHN : présentation des premières expérimentations : démo de visualisation et de requêtes SPARQL
+- DHNB2024 Reykjavik : présentation du projet Display
+- DH2024 : présentation de l’ontologie Display
 
 ===vvvvvv===
 
@@ -120,7 +120,7 @@
 
 ===>>>>>>===
 
-## Tout ce que vous n’avez jamais voulu savoir sur le web sémantique sans jamais le demandé...
+## Tout ce que vous n’avez jamais voulu savoir sur le web sémantique sans jamais le demandé…
 
 ===vvvvvv===
 
@@ -395,41 +395,37 @@ A perspective on the exhibition based on:
 
 ===vvvvvv===
 
-## Exemples d’interfaces
-
-- Base de données TMS, Mimsy...
+## Exemples d’interfaces : les bases de données muséales (TMS, Mimsy, …)
 
 ![Axiell](./img/narratives-emu-1.jpg)
 
 ===vvvvvv===
 
-- Sketchup, Autocad
+## [Sketchup](https://www.sketchup.com), Autocad
 
 ![SketchUp](./img/lo-3000193-MacInterface.png)
 
 ===vvvvvv===
 
-- [Scratch](https://scratch.mit.edu/)
+## [Scratch](https://scratch.mit.edu/)
 
-![Scratch](./img/Capture2024-10-28 10-48-04.png)
-
-===vvvvvv===
-
-- [Kitchen planner](https://kitchen.planner.ikea.com/planner/#/ca/en/)
-
-![ikea](./img/Capture2024-10-28 10-49-11.png)
+![Scratch](./img/scratch.png)
 
 ===vvvvvv===
 
-- [Visualisation abstraite](https://tafc.space/qna/the-topologists-world-map/)
+## [Kitchen planner](https://kitchen.planner.ikea.com/planner/#/ca/en/)
+
+![ikea](./img/ikea.png)
+
+===vvvvvv===
+
+## [Visualisation abstraite](https://tafc.space/qna/the-topologists-world-map/)
 
 ![img](http://tafc.space/wp-content/uploads/qna/topologists-world-map/dark-labelled-2048x2048.png)
 
 ===vvvvvv===
 
-## Prestataire
-
-Tractr
+## [Tractr](https://www.tractr.net), notre prestataire
 
 ![tractr](./img/tractr.png)
 
