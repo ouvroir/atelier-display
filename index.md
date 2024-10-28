@@ -154,7 +154,7 @@ tiré de Blaney :
     <figure>
       <img style="margin-top: 0;" data-src="./img/example-01-directed-graph.svg" alt="Exemple de graphe orienté acyclique">
       <figcaption>
-        Exemple de graphe orienté acyclique (<a href="https://commons.wikimedia.org/wiki/File:Directed_acyclic_graph.svg">publié dans le domaine public par David W.</a>)
+        Exemple de graphe orienté acyclique (<a href="https://commons.wikimedia.org/wiki/File:Directed_acyclic_graph.svg">image publiée</a> dans le domaine public par David W.)
       </figcaption>
     </figure>
   </div>
@@ -177,17 +177,35 @@ tiré de Blaney :
 
 ## La modélisation par classes
 
-- Concepts
-- Individus partagent caractéristiques
-- Organisation hiérarchique
-- Système d’héritage
+<div class="flex">
+  <div class="flex-1">
+<p>La classe :</p>
+
+  - représente un concept
+  - regroupe des individus aux caractéristiques communes
+  - s’organise dans une structure hiérarchique
+  - hérite des caractéristiques de la classe supérieure
+
+  </div>
+  <div class="flex-1">
+<p>Relation « is-a » : héritage des caractéristiques</p>
+    <figure>
+      <img style="margin-top: 0;" data-src="./img/class-inheritance.png" alt="">
+      <figcaption>
+        Exemple de l’héritage dans la modélisation par classe.
+      </figcaption>
+    </figure>
+  </div>
+</div>
 
 ===vvvvvv===
 
 ## L’approche associative
 
-- Associations (relations) entre les membres des classes
-- Transversal à la hiérarchie de la modélisation par classe
+- définition d’associations (relations) entre les membres des classes
+- utilisation de prédicat (verbe) pour créer une relation orientée (modèle RDF)
+
+Les relations entre les membres des classes sont **transversales** à la hiérarchie de la modélisation par classe.
 
 ===vvvvvv===
 
@@ -195,70 +213,30 @@ tiré de Blaney :
 
 Les ontologies combinent une approche taxonomique (classement des individus dans une hiérarchie) avec une approche associative (définition des relations entre les membres des classes), nous permettant de créer des modèles complexes et flexibles.
 
-===>>>>>>===
+===vvvvvv===
 
-# Interface
+## Les ontologies : des conceptualisations communes
+
+Les ontologies sont des modèles auto-descriptifs très souvent publiés en ligne qui peuvent être accédés et traités par les outils qui implémentent les standards du web sémantique.
+
+## L’ontologie Display
+
+Notre conceptualisation de la topologie de l’exposition.
+
+Accessible en ligne : [https://w3id.org/display](#)
 
 ===vvvvvv===
 
-## Lorem
+## Survol de l’ontologie Display
 
-===>>>>>>===
-
-# Atelier
-
-===vvvvvv===
-
-## Lorem
-
-===>>>>>>===
-
-# A spatial perspective on the exhibition
-
-<!-- @todo check take -->
+- domaine : la topologie de l’exposition
+- les classes centrales : l’espace et l’expôt
+- les propriétés pour reconstituer (décrire) l’espace
+- revisiter diapos DH24
 
 ===vvvvvv===
 
-<!-- .slide: data-visibility="hidden" -->
-
-## 3D for Historical Reconstruction
-
-<iframe width="900" height="506.25" src="https://www.youtube.com/embed/XCqiSbplATU?si=tMcEuk9Lycfnties&amp;start=47" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-<p style="font-size: 0.6em">Das Städel museum in 3D, Ihr Virtueller Besuch im Jahr 1878 <a href="http://zeitreise.staedelmuseum.de/vr-app/">http://zeitreise.staedelmuseum.de/vr-app/</a></p>
-
-===vvvvvv===
-
-<!-- .slide: data-visibility="hidden" -->
-
-## From 3D to a documentation model
-
-In our use case
-
-- archival and visual sources are essentials
-- limited constructive evidence (*vs* archeology)
-
-**➜ a spatial documentation model independant of any visualisation techniques**
-
-- data exchange and long-term preservation
-- various applications
-- 3D visualisations
-
-===vvvvvv===
-
-## The Display Application
-
-- A GUI for art historians to populate the ontology
-- gathering historical information and formulating hypotheses
-- generating 3D and simplified visualisation rendering
-
-===>>>>>>===
-
-# The Display Ontology
-
-===vvvvvv===
-
-## Ontological Core
+## Display : Ontological Core
 
 A perspective on the exhibition based on:
 
@@ -267,7 +245,7 @@ A perspective on the exhibition based on:
 
 ===vvvvvv===
 
-## The Main Conceptualization
+## Display : The Main Conceptualization
 
 - everything takes place in exhibition spaces
 - every exhibition entity (artistic or technical) is an *Exhibit*
@@ -278,7 +256,7 @@ A perspective on the exhibition based on:
 
 ===vvvvvv===
 
-## The Exhibit Class
+## Display : The Exhibit Class
 
 `display:Exhibit`
 
@@ -286,15 +264,13 @@ A perspective on the exhibition based on:
 
 ===vvvvvv===
 
-## Handling Description of Space
+## Display : Handling Tolopogical Relationships
 
-Reusing the Building Topology Ontology
+![Tolopogical Relationships](./img/ontology-03-topology.png)
 
-> The Building Topology Ontology (BOT) is a minimal OWL DL ontology for defining relationships between the sub-components of a building.<br><br>
-> (Rasmussen et al., 2021b)
+===>>>>>>===
 
-Specification: https://w3c-lbd-cg.github.io/bot/
-Namespace: `https://w3id.org/bot#`
+# Interface
 
 ===vvvvvv===
 
