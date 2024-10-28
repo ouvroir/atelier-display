@@ -284,20 +284,29 @@ Les ontologies combinent une approche taxonomique (classement des individus dans
 
 Les ontologies sont des modèles auto-descriptifs très souvent publiés en ligne qui peuvent être accédés et traités par les outils qui implémentent les standards du web sémantique.
 
+## Raisonnement et inférence
+
+- S’ajoute une couche logique qui permet d’inférer (ou déduire) des informations
+- Contraintes appliquées aux propriétés
+  - Classement automatique
+- Typage des propriétés
+  - Symétriques
+  - Transitives
+  - Inverses
+
+===vvvvvv===
+
 ## L’ontologie Display
 
 Notre conceptualisation de la topologie de l’exposition.
 
-Accessible en ligne : [https://w3id.org/display](#)
+Accessible en ligne : [https://w3id.org/display](https://ntnlv.ca/display/)
 
-===vvvvvv===
+### Survol
 
-## Survol de l’ontologie Display
-
-- domaine : la topologie de l’exposition
-- les classes centrales : l’espace et l’expôt
-- les propriétés pour reconstituer (décrire) l’espace
-- revisiter diapos DH24
+- Domaine de connaisances  la topologie de l’exposition
+- Classes centrales : l’espace et l’expôt
+- Propriétés topologiquea pour reconstituer (décrire) l’espace
 
 ===vvvvvv===
 
@@ -332,6 +341,10 @@ A perspective on the exhibition based on:
 ## Display : Handling Tolopogical Relationships
 
 ![Tolopogical Relationships](./img/ontology-03-topology.png)
+
+===vvvvvv===
+
+<!-- .slide: data-background-iframe="https://ouvroir.github.io/display-ontology/" data-background-interactive class="stack" -->
 
 ===>>>>>>===
 
@@ -913,10 +926,6 @@ The Display ontology
 
 - can describe complex curatorial phenomena in fine detail 
 - offers enough expressivity to leverage the ontological model through inferences
-
-===vvvvvv===
-
-<!-- .slide: data-background-iframe="https://ouvroir.github.io/display-ontology/" data-background-interactive class="stack" -->
 
 ===vvvvvv===
 
