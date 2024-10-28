@@ -36,7 +36,7 @@
 
 **Zoë&#0160;Renaudie, David&#0160;Valentine et Emmanuel Château-Dutier**
 
-28 ocotobre 2024
+28 octobre 2024
 
 <div class="logos flex">
   <div class="flex-1">
