@@ -342,7 +342,7 @@ A perspective on the exhibition based on:
 
 - Base de données TMS, Mimsy...
 
-![Axiell](./img/narratives-emu-1.png)
+![Axiell](./img/narratives-emu-1.jpg)
 
 ===vvvvvv===
 
@@ -354,13 +354,19 @@ A perspective on the exhibition based on:
 
 - [Scratch](https://scratch.mit.edu/)
 
+![Scratch](./img/Capture d’écran du 2024-10-28 10-48-04.png)
+
 ===vvvvvv===
 
 - [Kitchen planner](https://kitchen.planner.ikea.com/planner/#/ca/en/)
 
+![ikea](./img/Capture d’écran du 2024-10-28 10-49-11.png)
+
 ===vvvvvv===
 
-- Visualisation abstraite
+- [Visualisation abstraite](https://tafc.space/qna/the-topologists-world-map/)
+
+![img](http://tafc.space/wp-content/uploads/qna/topologists-world-map/dark-labelled-2048x2048.png)
 
 ===vvvvvv===
 
