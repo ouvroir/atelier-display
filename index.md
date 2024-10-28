@@ -36,7 +36,7 @@
 
 **Zoë&#0160;Renaudie, David&#0160;Valentine et Emmanuel Château-Dutier**
 
-28 octobre 2024
+28 ocotobre 2024
 
 <div class="logos flex">
   <div class="flex-1">
@@ -58,7 +58,7 @@
 
 # Accueil et introduction
 
-===>>>>>>===
+===vvvvvv===
 
 ## Programme
 
@@ -112,7 +112,7 @@
 
 - [CIDOC-CRM](http://www.cidoc-crm.org)
 - [CRMgeo](doi:[10.1007/s00799-016-0192-4](https://doi.org/10.1007/s00799-016-0192-4).): A Spatiotemporal Extension of CIDOC-CRM
-- Art Tracks http://www.museumprovenance.org
+- [Art Tracks](http://www.museumprovenance.org)
 - [OntoExhibit](https://complexhibit-project.github.io/OntoExhibit/index-en.html)
 - [CRMaaa ontology](https://ontome.net/namespace/246)
 
@@ -398,13 +398,13 @@ A perspective on the exhibition based on:
 
 - [Scratch](https://scratch.mit.edu/)
 
-![Scratch](./img/scratch.png)
+![Scratch](./img/Capture2024-10-28 10-48-04.png)
 
 ===vvvvvv===
 
 - [Kitchen planner](https://kitchen.planner.ikea.com/planner/#/ca/en/)
 
-![ikea](./img/ikea.png)
+![ikea](./img/Capture2024-10-28 10-49-11.png)
 
 ===vvvvvv===
 
