@@ -1,38 +1,57 @@
-# Atelier Display
+# Diapositives pour Display
 
-Sources des diapositives de l’atelier sur Display, 28 octobre 2024, Ouvroir d’histoire de l’art et de muséologie numériques.
+Sources des diapositives utilisées dans le cadre du projet Display (Ouvroir d’histoire de l’art et de muséologie numériques).
 
-# Diapositives : mode d’emploi pour travailler avec la source MD
+- [2024-12-17](./documenting/2024-12-17-documenting.md) : [Documenting Exhibitions with the Semantic Web](./documenting/)
+- [2024-10-28](./atelier/2024-10-28-atelier.md) : [Atelier Display](./atelier/)
 
-Titre de niveau 1 (#) : pour les colonnes de diapositives.
+# Mode d’emploi
 
-Titre de niveau 2 (##) : pour les diapositives.
+- **titre de niveau 1 (#) :** titre pour les colonnes de diapositives
+- **titre de niveau 2 (##) :** titre pour les diapositives
 
-## Ajouter une diapositive
+De cette façon, dans le plan de la présentation (outline), les titres de niveau 1 indiquent les colonnes de diapositives, tandis que les titres de niveau 2 indiquent les diapositives :
+
+![Les titres de niveau 1 indiquent les colonnes de diapositives, tandis que les titres de niveau 2 indiquent les diapositives.](./img/outline.png)
+
+## Syntaxe
+
+### Diapos et colonnes
+
+- ajouter une colonne : `===>>>>>>===`, suivi d’un titre de niveau 1
+- ajouter une diapositive : `===vvvvvv===`, suivi d’un titre de niveau 2
+
+Il est possible de n’afficher que le titre de niveau 1 sur la diapositive d’entête de colonne.
+
+### Background image
+
+À insérer immédiatement après le marqueur de nouvelle diapositive :
 
 ```
-===vvvvvv===
+<!-- .slide:
+data-background-image="./img/use-case-00-front.jpeg" data-background-size="auto 100%"
+-->
 ```
 
-Suivi d’un titre de niveau 2.
+### `<iframe>`
 
-## Ajouter une colonne
+À insérer immédiatement après le marqueur de nouvelle diapositive :
 
 ```
-===>>>>>>===
+<!-- .slide:
+data-background-iframe="https://ouvroir.github.io/display-ontology/webvowl/index.html" data-background-interactive class="stack"
+-->
 ```
 
-Suivi d’un titre de niveau 1. Il est possible de n’afficher que le titre de niveau 1 sur la diapositive d’entête de colonne.
+### Cacher une diapositive
 
-## Cacher une diapositive
+À insérer immédiatement après le marqueur de nouvelle diapositive :
 
-À insérer directement après le marqueur de nouvelle diapositive :
+`<!-- .slide: data-visibility="hidden" -->`
 
-<!-- .slide: data-visibility="hidden" -->
+### Speaker notes
 
-## Speaker notes
-
-À ajouter avant le marqueur de prochaine diapositive ou colonne. Le MD fonctione aussi dans les speaker notes.
+à insérer avant le marqueur de prochaine diapositive ou colonne :
 
 ```
 /** Notes **/
@@ -40,6 +59,8 @@ Suivi d’un titre de niveau 1. Il est possible de n’afficher que le titre de 
 - bla
 - bla
 ```
+
+La syntaxe MD fonctione aussi dans les speaker notes.
 
 ## Modèles
 
@@ -54,7 +75,7 @@ Suivi d’un titre de niveau 1. Il est possible de n’afficher que le titre de 
 </figure>
 ```
 
-### Deux colonnes
+### Diapositive en deux colonnes
 
 ```html
 <div style="display: flex">
@@ -70,7 +91,7 @@ Suivi d’un titre de niveau 1. Il est possible de n’afficher que le titre de 
 </div>
 ```
 
-Note : à l'intérieur de l'élément `div`, il faut expliciter l'élément `p`.
+**Note :** à l'intérieur de l'élément `div`, il faut expliciter l'élément `p`.
 
 ### Deux colonnes avec image et légende
 
@@ -94,3 +115,15 @@ Note : à l'intérieur de l'élément `div`, il faut expliciter l'élément `p`
 ```
 
 L'attribut `style` est facultatif. Le style peut être défini ailleurs selon les approches habituelles.
+
+# Dépôt : mode d'emploi
+
+- travailler dans sa colonne
+
+## Branches
+
+- `main` : branche principale pour le déploiement
+- `edit-d` : branche de David, rebase local sur main avant de pousser
+- `edit-z` : branche de Zoë, commit sur cette branche, pousse sur cette branche, puis pull request; 
+- cloner le dépôt
+- créer une branche, par exemple `edit-z`
