@@ -56,7 +56,7 @@
 
 ===vvvvvv===
 
-# Accueil et introduction
+## Accueil et introduction
 
 ===vvvvvv===
 
@@ -102,7 +102,7 @@
 ## Présentation colloque
 
 - Journée d’étude CIECO 2023, Réflexions pour un modèle de documentation des accrochages de collection (Marie + Emmanuel + Lena)
-- vitrine du CRIHN : présentation des premières expérimentations : démo de visualisation et de requêtes SPARQL
+- vitrine du CRIHN : présentation des premières expérimentations : démo de visualisation et de requêtes SPARQL
 - DHNB2024 Reykjavik : présentation du projet Display
 - DH2024 : présentation de l’ontologie Display
 
@@ -120,7 +120,7 @@
 
 ===>>>>>>===
 
-## Tout ce que vous n’avez jamais voulu savoir sur le web sémantique sans jamais le demandé…
+# Tout ce que vous n’avez jamais voulu savoir sur le web sémantique sans jamais le demandé…
 
 ===vvvvvv===
 
@@ -344,7 +344,7 @@ A perspective on the exhibition based on:
 
 ===vvvvvv===
 
-<!-- .slide: data-background-iframe="https://ouvroir.github.io/display-ontology/" data-background-interactive class="stack" -->
+<!-- .slide: data-background-iframe="https://ouvroir.github.io/display-ontology/webvowl/index.html" data-background-interactive class="stack" -->
 
 ===>>>>>>===
 
@@ -936,7 +936,7 @@ Focusing on the expographic configuration `but` compatible with CIDOC-CRM
 - Display ontology <br/>[https://ouvroir.github.io/display-ontology/](https://ouvroir.github.io/display-ontology/)
 - [ouvroir.umontreal.ca](https://ouvroir.umontreal.ca)
 
-<div class="logos" class="flex">
+<div class="logos flex">
   <div class="flex-1">
     <img style="height: 1.7em" src="./img/logo-cfi.svg">
   </div>
@@ -950,7 +950,6 @@ Focusing on the expographic configuration `but` compatible with CIDOC-CRM
 <div>
   <img style="height: 0.9em" src="./img/logo-crsh-en.svg">
 </div>
-
 
 ===vvvvvv===
 
