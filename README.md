@@ -4,7 +4,7 @@ Sources des diapositives utilisées dans le cadre du projet Display (Ouvroir d�
 
 - [2024-12-17](./documenting/2024-12-17-documenting.md) : [Documenting Exhibitions with the Semantic Web](./documenting/)
 - [2024-10-28](./atelier/2024-10-28-atelier.md) : [Atelier Display](./atelier/)
-- [2024-08-07](./dh2024/2024-08-07-dh2024.md) : [Atelier Display](./dh2024/)
+- [2024-08-07](./dh2024/2024-08-07-dh2024.md) : [DH2024](./dh2024/)
 
 # Mode d’emploi
 
