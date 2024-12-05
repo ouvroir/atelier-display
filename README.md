@@ -8,6 +8,12 @@ Sources des diapositives utilisées dans le cadre du projet Display (Ouvroir d�
 
 # Mode d’emploi
 
+## Branche de travail
+
+Pour éviter de déclencher le déploiement à chaque push, on travaille sur la branche `edit`.
+
+## Niveau des titres
+
 - **titre de niveau 1 (#) :** titre pour les colonnes de diapositives
 - **titre de niveau 2 (##) :** titre pour les diapositives
 
