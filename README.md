@@ -116,15 +116,3 @@ La syntaxe MD fonctione aussi dans les speaker notes.
 ```
 
 L'attribut `style` est facultatif. Le style peut être défini ailleurs selon les approches habituelles.
-
-# Dépôt : mode d'emploi
-
-- travailler dans sa colonne
-
-## Branches
-
-- `main` : branche principale pour le déploiement
-- `edit-d` : branche de David, rebase local sur main avant de pousser
-- `edit-z` : branche de Zoë, commit sur cette branche, pousse sur cette branche, puis pull request; 
-- cloner le dépôt
-- créer une branche, par exemple `edit-z`
