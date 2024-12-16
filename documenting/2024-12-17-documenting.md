@@ -160,7 +160,7 @@ The *Display* tool redefines how we study exhibitions by:
 
 ===>>>>>>===
 
-## L’ontologie Display
+## The Display Ontology
 
 An ontology for the topology of the exhibition
 
