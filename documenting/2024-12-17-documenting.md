@@ -229,6 +229,22 @@ The Building Topology Ontology (BOT)
 
 ===vvvvvv===
 
+## Handling Tolopogical Relationships
+
+<!-- .slide: data-visibility="hidden" -->
+
+![Tolopogical Relationships](../img/ontology-03-1-bot-display.png)
+
+===vvvvvv===
+
+## Handling Tolopogical Relationships
+
+<!-- .slide: data-visibility="hidden" -->
+
+![Tolopogical Relationships](../img/ontology-03-bot-display.png)
+
+===vvvvvv===
+
 ## Display : Handling Tolopogical Relationships
 
 ![Tolopogical Relationships](../img/ontology-03-topology.png)
