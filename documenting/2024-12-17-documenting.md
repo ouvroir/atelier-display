@@ -56,71 +56,102 @@ December 17 2024 🎄🎅🎄
 
 ===vvvvvv===
 
-![Multiple sources](../img/divers.png)
-
-===vvvvvv===
-
 ## Welcome
 
 ===vvvvvv===
 
 ## Programme
 
-1. Accueil et introduction
-1. L’ontologie Display
-1. L’application Display
-1. Atelier
+8:30 AM – 8:45 AM: Welcome and introduction to the event and the Ouvroir lab (15 min)  
 
-===>>>>>>===
+8:45 AM – 10:00 AM: Presentations (15 min each) in this order :
 
-# ZR Le projet Display
+- Display Ontology (presented by our team)  
+- Nuria Rodríguez-Ortega  
+- Anaïs Guillem  
+- Nicola Carboni  
+- George Bruseker  
+
+10:00 AM – 10:15 AM: Break  
+
+10:15 AM – 12:30 PM: Round Table
 
 ===vvvvvv===
 
-## Contexte du projet
+## New uses of collections in art museums
 
-### Nouveaux usages des collections dans les musées d’art
-
-- Partenariat CRSH
-- ~20 chercheurs, 6 musées canadiens
-- Axe 1 : *La collection exposée* (Marie Fraser dir.)
+- SSHRC Partnership
+- ~20 researchers, 6 canadian museums
+- First axis : *Exhibited Collections* (Marie Fraser dir.)
 - [www.cieco.co](https://www.cieco.co)
 
-### Ouvroir d’histoire de l’art et de muséologie numériques
+### Ouvoir d’histoire de l’art et de muséologie numériques
 
-- Laboratoire destiné à supporter la recherche
+- Digital lab to support the research
 - [ouvroir.umontreal.ca](https://ouvroir.umontreal.ca)
 
 ===vvvvvv===
 
-## Chronologie
-
-- 2021 : définition des besoins avec les acteurs de l’axe 1
-- 2022 : étude des outils existants
-- 2023 : développement de l’ontologie
-- 2024 : cahier des charges fonctionnel
-- 2025 : développement de l’application
-
-===vvvvvv===
-
-## Présentation colloque
-
-- Journée d’étude CIECO 2023, Réflexions pour un modèle de documentation des accrochages de collection (Marie + Emmanuel + Lena)
-- vitrine du CRIHN : présentation des premières expérimentations : démo de visualisation et de requêtes SPARQL
-- DHNB2024 Reykjavik : présentation du projet Display
-- DH2024 : présentation de l’ontologie Display
-
-===vvvvvv===
-
-## Les modèles de documentation patrimoniaux
+## Cultural heritage documentation models
 
 - [CIDOC-CRM](http://www.cidoc-crm.org)
 - [CRMgeo](doi:[10.1007/s00799-016-0192-4](https://doi.org/10.1007/s00799-016-0192-4).): A Spatiotemporal Extension of CIDOC-CRM
-- [Art Tracks](http://www.museumprovenance.org)
-- [OntoExhibit](https://complexhibit-project.github.io/OntoExhibit/index-en.html)
+- Art Tracks http://www.museumprovenance.org
+- [OntoExhibit](https://complexhibit-project.github.io/OntoExhibit/index-en.html) (other presentation in this conference)
 - [CRMaaa ontology](https://ontome.net/namespace/246)
 
-**Jusqu’à présent, pas de modèle spécialisé pour la documentation des expositions ou des accrochages**
+**to date, there is no specialized model for the documentation of exhibition or collection diplays**
+
+===vvvvvv===
+
+### Why Focus on the Semantic Model?  
+
+It drives the tool’s capabilities, ensuring:  
+
+- **Data durability**  
+- **Interoperability** across digital platforms  
+- Adaptability to new technologies  
+
+===>>>>>>===
+
+# Documenting exhibition and collection displays
+
+![Multiple sources](../img/divers.png)
+
+===vvvvvv===
+
+### A Spatial Approach to Exhibitions  
+
+The *Display* project develops a tool to support exhibition research by:  
+- Collecting and analyzing archival data  
+- Documenting findings  
+- Generating hypotheses  
+
+### Key Features  
+- Visualizing exhibitions spatially: **diagrams or 3D models**  
+- Bridging gaps in incomplete documentation  
+- Enabling **collaborative workflows** for research teams  
+
+===vvvvvv=== 
+
+### From Documentation to 3D Visualization  
+
+Unlike architecture or archaeology, museology lacks "constructive logic" for modeling exhibitions.  
+- Exhibition sources: archival documents and photographs  
+- Require specialized approaches to reconstruction  
+
+### How *Display* Solves This  
+- Supports the full workflow: data collection → hypotheses → 3D reconstructions  
+- Powered by an **OWL ontology** to handle uncertainties and gaps in documentation  
+
+ ===vvvvvv=== 
+
+The *Display* tool redefines how we study exhibitions by:  
+- Incorporating **spatial logic** to enhance reconstructions  
+- Bridging historical gaps with innovative modeling approaches  
+- Ensuring long-term usability and relevance  
+
+**A new way to understand exhibition history through durable, interoperable, and collaborative digital tools.**  
 
 ===>>>>>>===
 
