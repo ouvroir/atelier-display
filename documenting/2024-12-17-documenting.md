@@ -160,21 +160,19 @@ The *Display* tool redefines how we study exhibitions by:
 
 ===>>>>>>===
 
-# DV L’ontologie Display
-
-===vvvvvv===
-
 ## L’ontologie Display
 
-Notre conceptualisation de la topologie de l’exposition.
+An ontology for the topology of the exhibition
 
-Accessible en ligne : [https://w3id.org/display](https://ntnlv.ca/display/)
 
-### Survol
+- Namespace: [`https://w3id.org/display#`](https://w3id.org/display/)
+- Prefix: `display:`
 
-- Domaine de connaisances  la topologie de l’exposition
-- Classes centrales : l’espace et l’expôt
-- Propriétés topologiquea pour reconstituer (décrire) l’espace
+### Approach
+
+- Knowledge domain: the topology of the exhibition
+- Structure: few classes, variety of relations
+- Independent of visualization: historical uncertainties may coexist
 
 ===vvvvvv===
 
@@ -191,10 +189,6 @@ A perspective on the exhibition based on:
 
 - everything takes place in exhibition spaces
 - every exhibition entity (artistic or technical) is an *Exhibit*
-
-/** Notes **/
-
-- And that is the conceptualization we want to share with the museology community using the semantic web tools.
 
 ===vvvvvv===
 
@@ -213,8 +207,8 @@ Reusing the Building Topology Ontology
 > The Building Topology Ontology (BOT) is a minimal OWL DL ontology for defining relationships between the sub-components of a building.<br><br>
 > (Rasmussen et al., 2021b)
 
-Specification: https://w3c-lbd-cg.github.io/bot/
-Namespace: `https://w3id.org/bot#`
+- Namespace: [`https://w3id.org/bot#`](https://w3id.org/bot/)
+- Prefix: `bot:`
 
 ===vvvvvv===
 
@@ -254,6 +248,12 @@ The Building Topology Ontology (BOT)
 ## Linkage with CIDOC and heritage ontologies
 
 ![CIDOC](../img/ontology-04-cidoc.png)
+
+===vvvvvv===
+
+## What’s next
+
+- tbc
 
 ===>>>>>>===
 
