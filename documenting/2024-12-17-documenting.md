@@ -36,7 +36,7 @@
 
 **Zoë&#0160;Renaudie, David&#0160;Valentine et Emmanuel Château-Dutier**
 
-December 17 2024 🎄🎅🎄
+December 17, 2024
 
 <div class="logos flex">
   <div class="flex-1">
@@ -104,7 +104,7 @@ December 17 2024 🎄🎅🎄
 
 ===vvvvvv===
 
-### Why Focus on the Semantic Model?  
+## Why Focus on the Semantic Model?  
 
 It drives the tool’s capabilities, ensuring:  
 
@@ -120,7 +120,7 @@ It drives the tool’s capabilities, ensuring:
 
 ===vvvvvv===
 
-### A Spatial Approach to Exhibitions  
+## A Spatial Approach to Exhibitions  
 
 The *Display* project develops a tool to support exhibition research by:  
 - Collecting and analyzing archival data  
@@ -128,25 +128,30 @@ The *Display* project develops a tool to support exhibition research by:
 - Generating hypotheses  
 
 ### Key Features  
+
 - Visualizing exhibitions spatially: **diagrams or 3D models**  
 - Bridging gaps in incomplete documentation  
 - Enabling **collaborative workflows** for research teams  
 
 ===vvvvvv=== 
 
-### From Documentation to 3D Visualization  
+## From Documentation to 3D Visualization  
 
 Unlike architecture or archaeology, museology lacks "constructive logic" for modeling exhibitions.  
 - Exhibition sources: archival documents and photographs  
 - Require specialized approaches to reconstruction  
 
 ### How *Display* Solves This  
+
 - Supports the full workflow: data collection → hypotheses → 3D reconstructions  
 - Powered by an **OWL ontology** to handle uncertainties and gaps in documentation  
 
  ===vvvvvv=== 
 
+## A tool for studying exhibitions
+
 The *Display* tool redefines how we study exhibitions by:  
+
 - Incorporating **spatial logic** to enhance reconstructions  
 - Bridging historical gaps with innovative modeling approaches  
 - Ensuring long-term usability and relevance  
