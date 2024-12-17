@@ -268,7 +268,8 @@ The Building Topology Ontology (BOT)
 
 ## What’s next
 
-- tbc
+- More exhibitions with the Display ontology
+- Multiple instantiation with CIDOC application profiles or extensions
 
 ===>>>>>>===
 
