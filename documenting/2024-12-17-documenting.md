@@ -25,8 +25,7 @@
 }
 .reveal h3 {
   margin-top: 1em;  
-  }
-
+}
 .reveal .logos {
   margin-top: 2em;
 }

@@ -79,6 +79,11 @@ figure > figcaption {
   border-radius: 5px;
 }
 
+.reveal pre code {
+  background-color: rgb(39, 40, 34);
+  max-height: 600px;
+}
+
 /*********************************************
  * LINKS
  *********************************************/
