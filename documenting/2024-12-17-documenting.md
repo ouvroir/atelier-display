@@ -277,10 +277,36 @@ The Building Topology Ontology (BOT)
 
 ===vvvvvv===
 
-# Topics, etc.
+===>>>>>>===
 
-- topology
-- etc.
+## Example
+
+```
+# Fontaine
+exhib:exhibit0015 rdfs:label "Fontaine (Duchamp)" .
+
+# Display
+exhib:exhibit0015 a display:Exhibit ;
+  display:liesOn exhib:element0029 .
+
+# CIDOC (LA patterns)
+exhib:exhibit0015 a crm:E22_Human-Made_Object ;
+  crm:P2_has_type aat:300133025 ;
+  crm:P1_is_identified_by [...] , [...] ;
+  crm:P67i_is_referred_to_by [...] ;
+  crm:P108i_was_produced_by [
+    a crm:E12_Production ;
+    crm:P4_has_time-span [...] ;
+    crm:P14_carried_out_by <http://www.wikidata.org/entity/Q5912>
+  ] .
+
+# In the set of Feux pâles’s exhibits (using LA generic property)
+exhib:exhibit0015 la:member_of exhib:set0000 .
+
+# Set linked with the activity
+exhib:activity0000 a crm:E7_Activity ;
+  crm:P16_used_specific_object exhib:set0000 .
+```
 
 ===>>>>>>===
 
