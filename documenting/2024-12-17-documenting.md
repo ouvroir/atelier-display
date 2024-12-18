@@ -86,7 +86,7 @@ December 17, 2024
 - [ouvroir.umontreal.ca](https://ouvroir.umontreal.ca)
 
 ===vvvvvv===
-
+<!-- .slide: data-visibility="hidden" -->
 ## Cultural heritage documentation models
 
 - [CIDOC-CRM](http://www.cidoc-crm.org)
@@ -98,7 +98,7 @@ December 17, 2024
 **to date, there is no specialized model for the documentation of exhibition or collection diplays**
 
 ===vvvvvv===
-
+<!-- .slide: data-visibility="hidden" -->
 ## Why Focus on the Semantic Model?  
 
 It drives the tool’s capabilities, ensuring:  
@@ -169,6 +169,21 @@ An ontology for the topology of the exhibition
 - Structure: few classes, variety of relations
 - Independent of visualization: historical uncertainties may coexist
 
+/** Notes **/
+
+- So this tool is based on the Display Ontology, which is a model for describing the topology of exhibition, that we have developed here at L'Ouvroir.
+- And we first took a very simple approach to do that.
+
+**Structure**
+
+- we were looking at a way to describe topological relationship in a very straight forward manner
+- and we wanted something that was simple, and that was close to the way we describe topological facts in the natural language so we needed some flexibility.
+- As you will see we use a simple structure.
+
+**Independent of visualization**
+
+- And we start by an ontological approach because that kind of model doesn't need us to know everything about an exhibition in order to make sense out of the data.
+
 ===vvvvvv===
 
 ## Display : Ontological Core
@@ -178,12 +193,23 @@ A perspective on the exhibition based on:
 - concept of *Exhibit*
 - spatial logics (definition of abstract topological relationships)
 
+/** Notes **/
+
+- The Display ontology defines a set of classes and properties for describing exhibitions.
+- It adopts an expographic perspective based on the concept of exhibit, mobilizing mainly a spatial logic that implies being able to define topological relationships between exhibit and exhibition spaces.
+
 ===vvvvvv===
 
 ## Display : The Main Conceptualization
 
 - everything takes place in exhibition spaces
 - every exhibition entity (artistic or technical) is an *Exhibit*
+
+/** Notes **/
+
+- So we adopt a particular point of view on the exhibition, in the sense that:
+  - everything takes place in expographic, or exhibition spaces
+  - all objects located in such spaces are exhibits
 
 ===vvvvvv===
 
@@ -192,6 +218,11 @@ A perspective on the exhibition based on:
 `display:Exhibit`
 
 ![The exhibit class instatiation](../img/ontology-00-display.png)
+
+/** Notes **/
+
+- The `display:Exhibit` class is used to bring together elements involved in an exhibition, regardless of their artistic, aesthetic or technical characteristics, through the topological relationships they have with each other within an exhibition space.
+- As you can see again it's a very simple core, andthe  main property, called hastrw, is using the same domain and range, that is the display:Exhibit Class.
 
 ===vvvvvv===
 
@@ -205,6 +236,11 @@ Reusing the Building Topology Ontology
 - Namespace: [`https://w3id.org/bot#`](https://w3id.org/bot/)
 - Prefix: `bot:`
 
+/** Notes **/
+
+- As we don't want to remake what's already existing, following the best practices for creating web ontologies, we chose to integrate this core with the Building Topology Ontology (BOT), which is a recently developed model as part of a W3C community group
+- BOT proposes a minimal ontology for defining the relationships between building's subcomponents, aligning well with our requirements.
+
 ===vvvvvv===
 
 ## Handling Description of Space
@@ -216,11 +252,28 @@ The Building Topology Ontology (BOT)
   <figcaption>Classes and relationships involved in Zones (Rasmussen et al., 2021b)</figcaption>
 </figure>
 
+/** Notes **/
+
+- This ontology defines the existence of zones (such as site, building, floor, and space) with three-dimensional extents, applicable in both real and virtual contexts. These zones can be related to each other in a mereological manner, similar to Russian dolls.
+- So the model can effectively describe the relationship between exhibit and space within an exhibition context. Its simplicity allows for significant extensibility, which we leveraged to develop the Display ontology.
+- However, the BOT ontology is limited to the description of adjacency, partition and intersection relations, lacking a generic framework for topological relationships.
+- And this is where we link our modelling process with BOT
+
 ===vvvvvv===
 
 ## The `bot:` & `display:` Alignment Strategy
 
 ![Alignment](../img/ontology-02-alignment.png)
+
+/** Notes **/
+
+- The ontological alignment is crafted to enable the application of BOT’s topological properties to the description of exhibits and the application of Display’s topological properties to building elements. This alignment is achieved in four ways.
+- Firstly, there are two specializations to manage display spaces:
+  - The bot:Space class is specialized by a display:ExhibitionSpace subclass, which is designed to describe exhibition spaces and inherits properties for generic mereological relationships.
+  - The bot:hasSpace property is specialized by a sub-property display:hasExhibitionSpace.
+- Next, we establish a class equivalence relation to create two parallel classes, bot:Element and display:Element, allowing us to share topological and mereological relations at the model level.
+- Finally, the bot:Interface specialization is designed to specify the properties of non-topological relationships between spaces or between spaces and elements using a reification pattern, so this is a relation modelled as a class.
+- In practice we mainly use the display:Exhibit class that we saw earlier, which can be linked to an exhibition space using the display:hasExhibit property
 
 ===vvvvvv===
 
@@ -244,6 +297,14 @@ The Building Topology Ontology (BOT)
 
 ![Tolopogical Relationships](../img/ontology-03-topology.png)
 
+/** Notes **/
+
+And now we can look at the set of topological properties that can be used with this class.
+
+- I'm back with the litte core that we looked at earlier
+-  So we have Super-properties (display:hasTopologicalRelationWith) that are defined to enable the hierarchical organization of topological relationships in displays. This hierarchy distinguishes between proximal and spatial relations.
+- So the exhibit class is both in the domain and the range of all these properties.
+
 ===vvvvvv===
 
 <!-- .slide: data-background-iframe="https://ouvroir.github.io/display-ontology/webvowl/index.html" data-background-interactive class="stack" -->
@@ -254,11 +315,24 @@ The Building Topology Ontology (BOT)
 
 ![CIDOC](../img/ontology-041-cidoc.png)
 
+/** Notes **/
+
+- Display prioritizes a spatial perspective, contrasting with the event-driven approach of the CIDOC conceptual model.
+- The CRMarcheo extension effectively handles stratigraphy through temporal entities, reflecting events over time.
+- However, modeling spatial relationships in an exhibition according to the CIDOC model would be more complex than what we have considered here, in terms of notation and application.
+- But describing exhibitions using CIDOC-CRM is essential due to its prevalence in museums and heritage fields.
+- To bridge this gap, we propose linking the Display ontology to CIDOC-CRM in the following ways:
+  1. At the instance level: Exhibits can be instances of the E18_Physical_Thing class, enabling their description using CIDOC-CRM. Here we use the multiple instantiation technique.
+
 ===vvvvvv===
 
 ## Linkage with CIDOC and heritage ontologies
 
 ![CIDOC](../img/ontology-04-cidoc.png)
+
+/** Notes **/
+
+- Aggregates of exhibits within the display:Display class can be instances of E78_Curated_Holding, representing results of activities described using CIDOC.
 
 ===vvvvvv===
 
@@ -267,14 +341,20 @@ The Building Topology Ontology (BOT)
 - More exhibitions with the Display ontology
 - Multiple instantiation with CIDOC application profiles or extensions
 
+/** Notes **/
+
+- We have described FP exhibition, we have that our TS
+- More exhibitions with the Display ontology
+- Maybe we would like to go a step further into that multiple instantiation thing, using CIDOC application profiles or extensions
+
+That's why we wanted to talk with you.
+
 ===>>>>>>===
 
-# Discussions, etc.
-
-===vvvvvv===
+# Discussions
 
 ===>>>>>>===
-
+<!-- .slide: data-visibility="hidden" -->
 ## Example
 
 ```
@@ -305,7 +385,7 @@ exhib:activity0000 a crm:E7_Activity ;
 ```
 
 ===>>>>>>===
-
+<!-- .slide: data-visibility="hidden" -->
 # Conclusion
 
 The Display ontology
@@ -314,7 +394,7 @@ The Display ontology
 - offers enough expressivity to leverage the ontological model through inferences
 
 ===vvvvvv===
-
+<!-- .slide: data-visibility="hidden" -->
 Focusing on the expographic configuration `but` compatible with CIDOC-CRM
 
 **Semantic web technologies provide an abstract model for effectively reasoning about incomplete and sometimes contradictory documentation.**
