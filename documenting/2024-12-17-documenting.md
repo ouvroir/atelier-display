@@ -51,10 +51,6 @@ December 17, 2024
 
 ===vvvvvv===
 
-# ECD
-
-===vvvvvv===
-
 ## Welcome
 
 ===vvvvvv===
