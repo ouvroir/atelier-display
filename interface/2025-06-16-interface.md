@@ -393,40 +393,60 @@ Une perspective sur l'exposition basée sur :
 
 ===vvvvvv===
 
+## accueil 
+
 ![Projet](../img/Capture d’écran du 2025-05-29 11-31-28.png)
 
 ===vvvvvv===
+
+## Capture
 
 ![maps](../img/Screenshot 2025-06-16 at 4.41.22 PM.png)
 
 ===vvvvvv===
 
+## Capture
+
 ![maps](../img/Screenshot 2025-06-16 at 4.41.42 PM.png)
 
 ===vvvvvv===
+
+## Capture
 
 ![maps](../img/Screenshot 2025-06-16 at 4.41.58 PM.png)
 
 ===vvvvvv===
 
+## Capture
+
 ![maps](../img/Screenshot 2025-06-16 at 4.42.10 PM.png)
 
 ===vvvvvv===
+
+## Capture
 
 ![maps](../img/Screenshot 2025-06-16 at 4.42.21 PM.png)
 
 ===vvvvvv===
 
+## Capture
+
 ![maps](../img/Screenshot 2025-06-16 at 4.42.25 PM.png)
 
 ===vvvvvv===
+
+## Capture
 
 ![maps](../img/Screenshot 2025-06-16 at 4.42.28 PM.png)
 
 ===vvvvvv===
 
+## Capture
+
 ![visualisation](/home/lenamk/Documents/GitHub/atelier-display/img/Capture d’écran du 2025-05-29 11-31-53.png)
 
 ===vvvvvv===
+
+## Démo
 
 [démo](https://www.loom.com/share/7fb233c08bb249149a7d628498410d27?sid=8982ddc6-fe80-4796-a9ab-ef5dac82791a)
