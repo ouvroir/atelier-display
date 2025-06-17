@@ -395,55 +395,55 @@ Une perspective sur l'exposition basée sur :
 
 ## accueil 
 
-![Projet](../img/Capture d’écran du 2025-05-29 11-31-28.png)
+![Projet](../img/interface-01.png)
 
 ===vvvvvv===
 
 ## Capture
 
-![maps](../img/Screenshot 2025-06-16 at 4.41.22 PM.png)
+![maps](../img/interface-02.png)
 
 ===vvvvvv===
 
 ## Capture
 
-![maps](../img/Screenshot 2025-06-16 at 4.41.42 PM.png)
+![maps](../img/interface-03.png)
 
 ===vvvvvv===
 
 ## Capture
 
-![maps](../img/Screenshot 2025-06-16 at 4.41.58 PM.png)
+![maps](../img/interface-04.png)
 
 ===vvvvvv===
 
 ## Capture
 
-![maps](../img/Screenshot 2025-06-16 at 4.42.10 PM.png)
+![maps](../img/interface-05.png)
 
 ===vvvvvv===
 
 ## Capture
 
-![maps](../img/Screenshot 2025-06-16 at 4.42.21 PM.png)
+![maps](../img/interface-06.png)
 
 ===vvvvvv===
 
 ## Capture
 
-![maps](../img/Screenshot 2025-06-16 at 4.42.25 PM.png)
+![maps](../img/interface-07.png)
 
 ===vvvvvv===
 
 ## Capture
 
-![maps](../img/Screenshot 2025-06-16 at 4.42.28 PM.png)
+![maps](../img/interface-08.png)
 
 ===vvvvvv===
 
 ## Capture
 
-![visualisation](/home/lenamk/Documents/GitHub/atelier-display/img/Capture d’écran du 2025-05-29 11-31-53.png)
+![visualisation](../img/interface-09.png)
 
 ===vvvvvv===
 
