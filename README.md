@@ -2,10 +2,12 @@
 
 Sources des diapositives utilisées dans le cadre du projet Display (Ouvroir d’histoire de l’art et de muséologie numériques).
 
+- [2025-11-17](./midicauserie/2025-10-05-midicauserie.md) : [midicauserie](./midicauserie/)
+- [2025-06-17](./interface/2025-06-16.md) : [interface](./interface/)
 - [2024-12-17](./documenting/2024-12-17-documenting.md) : [Documenting Exhibitions with the Semantic Web](./documenting/)
 - [2024-10-28](./atelier/2024-10-28-atelier.md) : [Atelier Display](./atelier/)
 - [2024-08-07](./dh2024/2024-08-07-dh2024.md) : [DH2024](./dh2024/)
-- [2025-06-17](./interface/2025-06-16.md) : [interface](./interface/)
+
 # Mode d’emploi
 
 ## Branche de travail
@@ -67,7 +69,7 @@ data-background-iframe="https://ouvroir.github.io/display-ontology/webvowl/index
 - bla
 ```
 
-La syntaxe MD fonctione aussi dans les speaker notes.
+La syntaxe MD fonctionne aussi dans les speaker notes.
 
 ## Modèles
 
@@ -98,7 +100,7 @@ La syntaxe MD fonctione aussi dans les speaker notes.
 </div>
 ```
 
-**Note :** à l'intérieur de l'élément `div`, il faut expliciter l'élément `p`.
+**Note :** à l'intérieur de l'élément `div`, il faut expliciter l’élément `p`.
 
 ### Deux colonnes avec image et légende
 
