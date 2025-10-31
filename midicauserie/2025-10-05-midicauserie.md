@@ -32,7 +32,7 @@
 }
 </style>
 
-# Présentation de l'ontologie et l'outil **Display**
+# Présentation de l’ontologie et l’outil **Display**
 
 **Marie Fraser**, **David Valentine**, **Zoë Renaudie** et **Emmanuel Château-Dutier**
 
@@ -49,7 +49,7 @@
     <img id="udem" src="../img/logo-udem-officiel.svg" style="height: 2.5em;">
   </div>
 </div>
-<!-- Présentation de l'Ouvroir Zoë  -->
+<!-- Présentation de l’Ouvroir Zoë  -->
 
 ===>>>>>>===
 
@@ -57,13 +57,27 @@
 
 # Le projet Display
 
+===>>>>>>===
 
+<!-- David fait ce que tu veux ici. Peux-tu montrer à quoi ressemble notre jeu de données Feux Pales -->
+
+# Ontologie et jeu de données
+
+L’ontologie Display et notre étude de cas
+
+/** Notes **/
+
+Plan :
+
+- Ontologie Display
+  - Outil : documentation, visuel ontologie
+- Jeu de données Feux pâles
+  - Visuel plan FP et fragments de graphe
+  - Outils : point d’accès SPARQL et notices (si le temps le permet)
+- Transition : Linked Art, métadonnées et API
+  - afin de préparer les données pour l’application
 
 ===vvvvvv===
-
-# <!-- David fait ce que tu veux ici. Peux-tu montrer à quoi ressemble notre jeu de données Feux Pales -->
-
-
 
 ## Les ontologies : organisation des connaissances dans le web sémantique
 
@@ -194,21 +208,21 @@ Accessible en ligne : [https://w3id.org/display](https://ntnlv.ca/display/)
 
 ## Affichage : Noyau ontologique
 
-Une perspective sur l'exposition basée sur :
+Une perspective sur l’exposition basée sur :
 
-- le concept d'*Exposition*
+- le concept d’*Exposition*
 - les logiques spatiales (définition de relations topologiques abstraites)
 
 ===vvvvvv===
 
 ## Affichage : La conceptualisation principale
 
-- tout se déroule dans des espaces d'exposition
-- chaque entité d'exposition (artistique ou technique) est une *Exposition*
+- tout se déroule dans des espaces d’exposition
+- chaque entité d’exposition (artistique ou technique) est une *Exposition*
 
 /** Notes **/
 
-- C'est cette conceptualisation que nous souhaitons partager avec la communauté muséologique grâce aux outils du web sémantique.
+- C’est cette conceptualisation que nous souhaitons partager avec la communauté muséologique grâce aux outils du web sémantique.
 
 ===vvvvvv===
 
