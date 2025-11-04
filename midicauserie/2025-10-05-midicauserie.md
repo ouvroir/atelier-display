@@ -61,9 +61,15 @@
 
 <!-- David fait ce que tu veux ici. Peux-tu montrer à quoi ressemble notre jeu de données Feux Pales -->
 
-# Ontologie et jeu de données
+# Display : une ontologie et des données structurées
 
-L’ontologie Display et notre étude de cas
+Pour traiter l’information extraite des documents et des sources visuelles sur les expositions.
+
+Dans le contexte de la recherche historique : incertitudes et information parcellaire ou incomplète.
+
+- **Modèle conceptuel :** l’ontologie Display
+- **Jeu de données :** une étude de cas sur *Feux pâles*
+- **Modèle de données :** pour l’utilisation de l’ontologie Display dans un contexte applicatif
 
 /** Notes **/
 
@@ -74,167 +80,252 @@ Plan :
 - Jeu de données Feux pâles
   - Visuel plan FP et fragments de graphe
   - Outils : point d’accès SPARQL et notices (si le temps le permet)
-- Transition : Linked Art, métadonnées et API
+- Modèle de données (transition)
+  - Linked Art, métadonnées et API
   - afin de préparer les données pour l’application
 
 ===vvvvvv===
 
-## Les ontologies : organisation des connaissances dans le web sémantique
+## L’ontologie Display : perspective spatiale sur l’exposition
 
-Une ontologie est une structure abstraite utilisée pour représenter un domaine de connaissances.
+Une conceptualisation de la **topologie de l’exposition** mise en œuvre avec les technologies du **web sémantique** :
 
-Une ontologie s’organise à la manière d’une [toxonomie](https://fr.wikipedia.org/wiki/Taxonomie_(homonymie)) (une structure de classement hiérarchique : par exemple, la classification des espèces), mais avec plus de **flexibilité**.
-
-Une ontologie est flexible car elle fonctionne comme un [graphe](https://fr.wikipedia.org/wiki/Graphe_(type_abstrait)).
-
-([Blaney 2017](https://programminghistorian.org/en/lessons/intro-to-linked-data))
+- `RDF` : principes des données liées
+- `OWL` : structuration des connaissaces et logique formelle
 
 /** Notes **/
 
-tiré de Blaney :
-
-- modéliser l’information dans un champ d’études
-- réfléchir à la façon dont on peut représenter les relations dans ce champ
-- on utilise une structure de données que l’on appelle une ontologie
-
-> An ontology is an abstraction that allows particular knowledge about the world to be represented.
-> Ontologies, in this sense, are quite new and they were designed to do what a hiearchical [taxonomy](https://en.wikipedia.org/wiki/Taxonomy) does (think of the classification of species in the [Linnaean system](https://en.wikipedia.org/wiki/Linnaean_taxonomy)), but more flexibly.
+Une mise en œuvre qui utilise ces technologies nous permet de...
 
 ===vvvvvv===
 
-## Les ontologies
+## L’ontologie Display : perspective spatiale sur l’exposition
 
-<div class="flex">
-  <div class="flex-1">
-    <p>De la hiérarchie au graphe :</p>
+Création d’un modèle de documentation indépendant de tout type de visualisation.
 
-  - descriptions et représentions plus fluides
-  - mises en relation plus complexes des objets
-    </div>
-  <div class="flex-1">
-    <figure>
-      <img style="margin-top: 0;" data-src="../img/example-01-directed-graph.svg" alt="Exemple de graphe orienté acyclique">
-      <figcaption>
-        Exemple de graphe orienté acyclique (<a href="https://commons.wikimedia.org/wiki/File:Directed_acyclic_graph.svg">image publiée</a> dans le domaine public par David W.)
-      </figcaption>
-    </figure>
-  </div>
-</div>
+Basé sur les avantages de l’utilisation des standards du web :
+
+- **interopérabilité** des données
+- **pérennisation** des données
+- **indépendance** des contextes applicatifs
 
 /** Notes **/
 
-> An ontology is more flexible because it is non-hierarchical.
-> It aims to represent the fluidity of the real world, where things can be related to each other in more complex ways than are represented by a hierarchical tree-like structure.
-> Instead, an ontology is more like a spider’s web.
+Grâce à ces technologies **standardisées**, 
 
 ===vvvvvv===
 
-## Comment s’organise une ontologie ?
-
-- avec des **classes** qui représentent des **concepts**
-- avec des **proprités** qui représentent les **relations** entre les concepts
-
-===vvvvvv===
-
-## La modélisation par classes
-
-<div class="flex">
-  <div class="flex-1">
-<p>La classe :</p>
-
-  - représente un concept
-  - regroupe des individus aux caractéristiques communes
-  - s’organise dans une structure hiérarchique
-  - hérite des caractéristiques de la classe supérieure
-
-  </div>
-  <div class="flex-1">
-<p>Relation « is-a » : héritage des caractéristiques</p>
-    <figure>
-      <img style="margin-top: 0;" data-src="../img/class-inheritance.png" alt="">
-      <figcaption>
-        Exemple de l’héritage dans la modélisation par classe.
-      </figcaption>
-    </figure>
-  </div>
-</div>
-
-===vvvvvv===
-
-## L’approche associative
-
-- définition d’associations (relations) entre les membres des classes
-- utilisation de prédicat (verbe) pour créer une relation orientée (modèle RDF)
-
-Les relations entre les membres des classes sont **transversales** à la hiérarchie de la modélisation par classe.
-
-===vvvvvv===
-
-## Les ontologies : des classes et des relations
-
-Les ontologies combinent une approche taxonomique (classement des individus dans une hiérarchie) avec une approche associative (définition des relations entre les membres des classes), nous permettant de créer des modèles complexes et flexibles.
-
-===vvvvvv===
-
-## Les ontologies : des conceptualisations communes
-
-Les ontologies sont des modèles auto-descriptifs très souvent publiés en ligne qui peuvent être accédés et traités par les outils qui implémentent les standards du web sémantique.
-
-## Raisonnement et inférence
-
-- S’ajoute une couche logique qui permet d’inférer (ou déduire) des informations
-- Contraintes appliquées aux propriétés
-  - Classement automatique
-- Typage des propriétés
-  - Symétriques
-  - Transitives
-  - Inverses
-
-===vvvvvv===
-
-## L’ontologie Display
-
-Notre conceptualisation de la topologie de l’exposition.
-
-Accessible en ligne : [https://w3id.org/display](https://ntnlv.ca/display/)
-
-### Survol
-
-- Domaine de connaisances  la topologie de l’exposition
-- Classes centrales : l’espace et l’expôt
-- Propriétés topologiques pour reconstituer (décrire) l’espace
-
-===vvvvvv===
-
-## Affichage : Noyau ontologique
+## Le noyau ontologique
 
 Une perspective sur l’exposition basée sur :
 
-- le concept d’*Exposition*
-- les logiques spatiales (définition de relations topologiques abstraites)
-
-===vvvvvv===
-
-## Affichage : La conceptualisation principale
-
-- tout se déroule dans des espaces d’exposition
-- chaque entité d’exposition (artistique ou technique) est une *Exposition*
+- le concept d’*Exhibit* : **objet situé** dans un espace d’exposition
+- une logique spatiale qui définit des **relations topologiques** abstraites permettant :
+  - d’exprimer la disposition spatiale des **objets entre eux**
+  - d’exprimer la disposition des **objets dans l’espace**
 
 /** Notes **/
 
+- Comment fonctionne ce modèle conceptuel : une unité conceptuelle centrale, l’exhibit.
+- Donc essentiellement on décrit sémantiquement, donc à l’aide de termes syntaxe SVO, comment sont positionnés les objets dans l’espace
 - C’est cette conceptualisation que nous souhaitons partager avec la communauté muséologique grâce aux outils du web sémantique.
 
 ===vvvvvv===
 
 <!-- .slide: data-background-iframe="https://ouvroir.github.io/display-ontology/webvowl/index.html" data-background-interactive class="stack" -->
 
+/** Notes **/
+
+Modèle conceptuel, donc abstrait. Mais concrètement, on a testé avec Feux pâles.
+
+===vvvvvv===
+
+<style>
+  .reveal #credits {
+    position: fixed;
+    bottom: 0;
+    color: #eee;
+    left: 0;
+    font-size: 14px;
+  }
+</style>
+
+<!-- .slide:
+data-background-image="../img/use-case-00-front.jpeg" data-background-size="auto 100%"
+-->
+
+<div id="credits">Photo. : Frédéric Delpech ©&#0160;Claire&#0160;Burrus, Paris / Jan Mot, Bruxelles.</div>
+
 ===vvvvvv===
 
 ![Multiple sources](../img/divers.png)
 
+/** Notes **/
+
+In our use case
+
+- archival and visual sources are essentials
+- limited constructive evidence (*vs* archeology)
+
 ===vvvvvv===
 
-Jeu de données Feux Pâles
+## Définition des espaces d’exposition
+
+`bot:intersectsZone`: Intersecting Zones
+
+<div style="display: flex">
+  <div class="flex-1">
+    <figure>
+      <img data-src="../img/plan-intersections-couloir.png" alt="Détail du plan de l’exposition Feux pâles au CAPC, galerie Foy.">
+      <figcaption>
+        Détail du plan de l’exposition Feux pâles au CAPC, galerie Foy. ©&#0160;Zoë&#0160;Renaudie.
+      </figcaption>
+    </figure>
+  </div>
+  <div class="flex-1">
+    <img src="../img/use-case-graph-071.png">
+  </div>
+</div>
+
+===vvvvvv===
+
+## Définition des espaces d’exposition
+
+`bot:intersectsZone`: Intersecting Zones
+
+<div style="display: flex">
+  <div class="flex-1">
+    <figure>
+      <img data-src="../img/plan-intersections-spaces.png" alt="Détail du plan de l’exposition Feux pâles au CAPC, galerie Foy.">
+      <figcaption>
+        Détail du plan de l’exposition Feux pâles au CAPC, galerie Foy. ©&#0160;Zoë&#0160;Renaudie.
+      </figcaption>
+    </figure>
+  </div>
+  <div class="flex-1">
+    <img src="../img/use-case-graph-07.png">
+  </div>
+</div>
+
+===vvvvvv===
+
+## Définition des espaces d’exposition
+
+`display:hasExhibitionSpace`: Space contains space
+
+<div style="display: flex">
+  <div class="flex-1">
+    <figure>
+      <img data-src="../img/plan-inventaire-01.png" alt="Détail du plan de l’exposition Feux pâles au CAPC, galerie Foy.">
+      <figcaption>
+        Détail du plan de l’exposition Feux pâles au CAPC, galerie Foy. ©&#0160;Zoë&#0160;Renaudie.
+      </figcaption>
+    </figure>
+  </div>
+  <div class="flex-1">
+    <img src="../img/use-case-graph-08.png">
+  </div>
+</div>
+
+===vvvvvv===
+
+## Définition des espaces d’exposition
+
+`display:hasExhibitionSpace`: Space contains space
+
+<div style="display: flex">
+  <div class="flex-1">
+    <figure>
+      <img data-src="../img/plan-inventaire-02.png" alt="Détail du plan de l’exposition Feux pâles au CAPC, galerie Foy.">
+      <figcaption>
+        Détail du plan de l’exposition Feux pâles au CAPC, galerie Foy. ©&#0160;Zoë&#0160;Renaudie.
+      </figcaption>
+    </figure>
+  </div>
+  <div class="flex-1">
+    <img src="../img/use-case-graph-08-2.png">
+  </div>
+</div>
+
+===vvvvvv===
+
+## Définition des espaces d’exposition
+
+`display:adjacentExhibit:`: Spaces share element
+
+<div style="display: flex">
+  <div class="flex-1">
+    <figure>
+      <img data-src="../img/plan-inventaire-03.png" alt="Détail du plan de l’exposition Feux pâles au CAPC, galerie Foy.">
+      <figcaption>
+        Détail du plan de l’exposition Feux pâles au CAPC, galerie Foy. ©&#0160;Zoë&#0160;Renaudie.
+      </figcaption>
+    </figure>
+  </div>
+  <div class="flex-1">
+    <img src="../img/use-case-graph-08-3.png">
+  </div>
+</div>
+
+===vvvvvv===
+
+## Relations topologiques entre exhibits
+
+<figure class="w75">
+  <img data-src="../img/use-case-04-inventaire.png" alt="Salle d'entrée de l’expostion Feux pâles.">
+  <figcaption>
+    Vue de l’exposition Feux pâles (1990), salle 1 “Inventaire du mémorable”. Photo.&#0160;: Frédéric Delpech © ©&#0160;Claire&#0160;Burrus, Paris / Jan Mot, Bruxelles.
+  </figcaption>
+</figure>
+
+===vvvvvv===
+
+## Relations topologiques entre exhibits
+
+`display:Display`: aggregate of exhibits
+
+![Instantiation syntax](../img/use-case-graph-11-1.png)
+
+===vvvvvv===
+
+## Relations topologiques entre exhibits
+
+`display:Display`: aggregate of exhibits
+
+![Instantiation syntax](../img/use-case-graph-11-2.png)
+
+===vvvvvv===
+
+## Relations topologiques entre exhibits
+
+`display:Display`: aggregate of exhibits
+
+![Instantiation syntax](../img/use-case-graph-11-3.png)
+
+===vvvvvv===
+
+## Inférence : enrichir le graphe de données
+
+![Reasoning](../img/use-case-graph-12-1.png)
+
+===vvvvvv===
+
+## Inférence : enrichir le graphe de données
+
+![Reasoning](../img/use-case-graph-12.png)
+
+===vvvvvv===
+
+## Modèle de données
+
+Un modèle de données pour articuler :
+
+- les données structurées par l’ontologie (Display)
+- les métadonnées sur les **œuvres d’art** (CIDOC CRM)
+
+Mais surtout pour :
+
+- faciliter l’utilisation des données dans différents contextes applicatifs grâce à une formalisation idiomatique et documentée (modèle d’API Linked Art)
 
 ===>>>>>>===
 
