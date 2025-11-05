@@ -338,10 +338,10 @@ Mais surtout pour :
 
 ===vvvvvv===
 
-## Personnae
+## Utilisateurs
 
-- l’auxiliaire de recherche 
 - le chercheur principal
+- l’auxiliaire de recherche 
 - le commissaire d’exposition
 
 ===vvvvvv===
