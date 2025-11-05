@@ -75,6 +75,15 @@ Dans le contexte de la recherche historique : incertitudes et information parce
 - **Jeu de données :** une étude de cas sur *Feux pâles*
 - **Modèle de données :** pour l’utilisation de l’ontologie Display dans un contexte applicatif
 
+/** Notes **/
+
+- Le projet Display repose sur une architecture de données
+- Qui est conçue pour traiter de l’information extraite de documents d’archives et des sources visuelles sur les expositions.
+- Et cette architecture doit prendre en considération les aléas de la recherche historique
+- qui est caractérisée notamment par les incertitudes et par de l’information parcellaire ou incomplète.
+
+L’élaboration repose sur trois briques.
+
 ===vvvvvv===
 
 ## L’ontologie Display : perspective spatiale sur l’exposition
@@ -86,7 +95,11 @@ Une conceptualisation de la **topologie de l’exposition** mise en œuvre avec 
 
 /** Notes **/
 
-Une mise en œuvre qui utilise ces technologies nous permet de...
+- Le modèle conceptuel en question, c’est l’ontologie Display.
+- Qui est une conceptualisation de la topologie de l’exposition, sur laquelle je reviens...
+- Et implémenté avec les techno du web sem :
+  - rdf : gérer la publication et le partage des données 
+  - owl : établir la structure conceptuelle, et d’appliquer une logique de descrition à notre modèle, permettant d’effectuer des inférences, dans l’espoir d’enrichir les informations qui sont extraites des sources historiques. 
 
 ===vvvvvv===
 
@@ -102,7 +115,11 @@ Basé sur les avantages de l’utilisation des standards du web :
 
 /** Notes **/
 
-Grâce à ces technologies **standardisées**, 
+- Ça nous permet, donc, de créer un modèle de documentation indépendant de tout type de visualisation
+- Et j’irais même jusqu’à dire indépendant de tout type d’application spécifique
+- Parce que tout ça repose sur des technologies **standardisées**, qui jouissent d’un statut normatif très stable, avec de la ducumentation complète, détaillée et publique.
+- Avec pour pricipal avantage de permettre la création d’une structure de données effectivement indépendante d’un contexte applicatif
+- mais qui a quand même du sens dans la perspective qui nous intéresse, qui est celle de la topologie de l’exposition
 
 ===vvvvvv===
 
@@ -117,8 +134,10 @@ Une perspective sur l’exposition basée sur :
 
 /** Notes **/
 
-- Comment fonctionne ce modèle conceptuel : une unité conceptuelle centrale, l’exhibit.
-- Donc essentiellement on décrit sémantiquement, donc à l’aide de termes syntaxe SVO, comment sont positionnés les objets dans l’espace
+- Alors comment fonctionne ce modèle : il y a une unité conceptuelle centrale, l’exhibit.
+- Qui est un objet que l’on peut situer dans l’espace d’espace d’exposition (fonction artistique ou technique, donc œuvre ou élément scénographique)
+- Se dote d’un vocabulaire basé sur une logique spatiale...
+- Donc essentiellement on décrit sémantiquement, donc à l’aide des termes du vocabulaire, comment sont positionnés les objets dans l’espace (exemple A devant B)
 - C’est cette conceptualisation que nous souhaitons partager avec la communauté muséologique grâce aux outils du web sémantique.
 
 ===vvvvvv===
@@ -321,6 +340,16 @@ Un modèle de données pour articuler :
 Mais surtout pour :
 
 - faciliter l’utilisation des données dans différents contextes applicatifs grâce à une formalisation idiomatique et documentée (modèle d’API Linked Art)
+
+/** Notes **/
+
+- Finalement, l’élément le plus récent dans l’architecture des données
+- Pour articuler, car ce n’est pas tout de dire que des exhibits sont dans l’espace
+- Quelles sont elles, qui a créé ces œuvres
+- Donc articuler Display avec CIDOC
+- À partir de cette articulation, on peut organiser l’info dans des formats de données qui sont typiquement utilisés en programmation Web
+- Basé sur un modèle d’interface de programmation, Linked Art
+- Et c'est à partir de ces formats de données que l’app travaille!
 
 ===>>>>>>===
 
