@@ -53,9 +53,13 @@
 
 ===>>>>>>===
 
-# <!-- Partie Marie Fraser  -->
+<!-- Partie Marie Fraser  -->
 
 # Le projet Display
+
+
+
+<!-- transition Zoë  -->
 
 ===>>>>>>===
 
@@ -329,7 +333,7 @@ Mais surtout pour :
 
 ===>>>>>>===
 
-# <!-- Partie Zoë  -->
+<!-- Partie Zoë  -->
 
 # L’application Display
 
@@ -369,15 +373,9 @@ Mais surtout pour :
 
 ===vvvvvv===
 
-## [Tractr](https://www.tractr.net), notre prestataire
-
-![tractr](../img/tractr.png)
-
-===vvvvvv===
-
 ## Fonctionnalités principales
 
-- Importation et gestion des œuvres
+- Importation et gestion des œuvres mais aussi des sources
 - Modélisation des espaces d’exposition
 - Positionnement des œuvres
 - Visualisation des hypothèses
@@ -385,6 +383,66 @@ Mais surtout pour :
 ===>>>>>>===
 
 ## Développement en cours
+
+===vvvvvv===
+
+## [Tractr](https://www.tractr.net), notre prestataire
+
+![tractr](../img/tractr.png)
+
+===vvvvvv===
+
+## accueil 
+
+![Projet](../img/interface-01.png)
+
+===vvvvvv===
+
+## Capture
+
+![maps](../img/interface-02.png)
+
+===vvvvvv===
+
+## Capture
+
+![maps](../img/interface-03.png)
+
+===vvvvvv===
+
+## Capture
+
+![maps](../img/interface-04.png)
+
+===vvvvvv===
+
+## Capture
+
+![maps](../img/interface-05.png)
+
+===vvvvvv===
+
+## Capture
+
+![maps](../img/interface-06.png)
+
+===vvvvvv===
+
+## Capture
+
+![maps](../img/interface-07.png)
+
+===vvvvvv===
+
+## Capture
+
+![maps](../img/interface-08.png)
+
+===vvvvvv===
+
+## Capture
+
+![visualisation](../img/interface-09.png)
 
 ===vvvvvv===
 
