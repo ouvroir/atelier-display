@@ -75,19 +75,6 @@ Dans le contexte de la recherche historique : incertitudes et information parce
 - **Jeu de données :** une étude de cas sur *Feux pâles*
 - **Modèle de données :** pour l’utilisation de l’ontologie Display dans un contexte applicatif
 
-/** Notes **/
-
-Plan :
-
-- Ontologie Display
-  - Outil : documentation, visuel ontologie
-- Jeu de données Feux pâles
-  - Visuel plan FP et fragments de graphe
-  - Outils : point d’accès SPARQL et notices (si le temps le permet)
-- Modèle de données (transition)
-  - Linked Art, métadonnées et API
-  - afin de préparer les données pour l’application
-
 ===vvvvvv===
 
 ## L’ontologie Display : perspective spatiale sur l’exposition
@@ -133,6 +120,10 @@ Une perspective sur l’exposition basée sur :
 - Comment fonctionne ce modèle conceptuel : une unité conceptuelle centrale, l’exhibit.
 - Donc essentiellement on décrit sémantiquement, donc à l’aide de termes syntaxe SVO, comment sont positionnés les objets dans l’espace
 - C’est cette conceptualisation que nous souhaitons partager avec la communauté muséologique grâce aux outils du web sémantique.
+
+===vvvvvv===
+
+<!-- .slide: data-background-iframe="https://ouvroir.github.io/display-ontology/" data-background-interactive class="stack" -->
 
 ===vvvvvv===
 
