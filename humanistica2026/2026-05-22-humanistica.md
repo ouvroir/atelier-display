@@ -1,0 +1,497 @@
+<!-- ’ -->
+<style display="none">
+.flex {
+  display: flex;
+}
+.flex-1 {
+  flex: 1;
+}
+.flex-1-5 {
+  flex: 1.5;
+}
+#ouvroir {
+  position: relative;
+  right: 10%;
+}
+#cieco {
+  max-width: 50%;
+  position: relative;
+	left: 5%;
+}
+#udem {
+  margin-top: 0;
+  postion: relative;
+  bottom: 15%;
+}
+.reveal h3 {
+  margin-top: 1em;  
+  }
+
+.reveal .logos {
+  margin-top: 2em;
+}
+</style>
+
+# Display : une infrastructure sémantique pour la documentation structurée des accrochages d’exposition
+
+**Zoë Renaudie**, **David Valentine**, et **Emmanuel Château-Dutier**
+
+2026
+
+<div class="logos flex">
+  <div class="flex-1">
+    <img id="cieco" src="../img/logo-cieco-grey.svg" style="height: 2.3em;">
+  </div>
+  <div class="flex-1">
+    <img id="ouvroir" src="../img/logo-ouvroir.svg" style="height: 2.1em;">
+  </div>
+  <div class="flex-1">
+    <img id="udem" src="../img/logo-udem-officiel.svg" style="height: 2.5em;">
+  </div>
+</div>
+
+===>>>>>>===
+
+# Introduction et contexte - 3 min
+Faire de la recherche des expositions passées avec une documentation lacunaire
+Positionnement du labo
+Hypothèse
+
+===>>>>>>===
+# Problématique - 2 min
+Limites actuelles : documentation hétérogène, non structurées
+Pas de modèle pour la spatialité des accrochages
+Rendre le web sémantique accessible aux chercheurs
+
+===>>>>>>===
+
+# Méthodo - 4 min
+Cas d'étude : Feux pâles (1990) - pourquoi ce choix
+Les 3 phases de développement : 
+identification des besoins 
+modélisation ontologique 
+interface utilisateur
+L'approche collaborative interdisciplinaire, la traduction entre les domaines (historien - dh, dev - dh)
+
+===>>>>>>===
+# Archi technique - 5 min
+Démo de l’interface
+Les 3 couches
+Focus sur des fonctionnalités
+Avantage du moteur d’inférence
+
+===>>>>>>===
+# Résultats - 4 min
+Application à Feux Pâles
+Les deux contributions : methodo et empirique
+Interopérabilité et pérénnité ?
+
+===>>>>>>===
+# Perspectives - 2 min
+Une exposition n’est pas qu’un accrochage, et si on allait plus loin ? Ma thèse Bim bam boum.
+
+
+===>>>>>>===
+
+# Display : une ontologie et des données structurées
+
+Pour traiter l’information extraite des documents et des sources visuelles sur les expositions.
+
+Dans le contexte de la recherche historique : incertitudes et information parcellaire ou incomplète.
+
+- **Modèle conceptuel :** l’ontologie Display
+- **Jeu de données :** une étude de cas sur *Feux pâles*
+- **Modèle de données :** pour l’utilisation de l’ontologie Display dans un contexte applicatif
+
+/** Notes **/
+
+- Le projet Display repose sur une architecture de données
+- Qui est conçue pour traiter de l’information extraite de documents d’archives et des sources visuelles sur les expositions.
+- Et cette architecture doit prendre en considération les aléas de la recherche historique
+- qui est caractérisée notamment par les incertitudes et par de l’information parcellaire ou incomplète.
+
+L’élaboration repose sur trois briques.
+
+===vvvvvv===
+
+## L’ontologie Display : perspective spatiale sur l’exposition
+
+Une conceptualisation de la **topologie de l’exposition** mise en œuvre avec les technologies du **web sémantique** :
+
+- `RDF` : principes des données liées
+- `OWL` : structuration des connaissaces et logique formelle
+
+/** Notes **/
+
+- Le modèle conceptuel en question, c’est l’ontologie Display.
+- Qui est une conceptualisation de la topologie de l’exposition, sur laquelle je reviens...
+- Et implémenté avec les techno du web sem :
+  - rdf : gérer la publication et le partage des données 
+  - owl : établir la structure conceptuelle, et d’appliquer une logique de descrition à notre modèle, permettant d’effectuer des inférences, dans l’espoir d’enrichir les informations qui sont extraites des sources historiques. 
+
+===vvvvvv===
+
+## L’ontologie Display : perspective spatiale sur l’exposition
+
+Création d’un modèle de documentation indépendant de tout type de visualisation.
+
+Basé sur les avantages de l’utilisation des standards du web :
+
+- **interopérabilité** des données
+- **pérennisation** des données
+- **indépendance** des contextes applicatifs
+
+/** Notes **/
+
+- Ça nous permet, donc, de créer un modèle de documentation indépendant de tout type de visualisation
+- Et j’irais même jusqu’à dire indépendant de tout type d’application spécifique
+- Parce que tout ça repose sur des technologies **standardisées**, qui jouissent d’un statut normatif très stable, avec de la ducumentation complète, détaillée et publique.
+- Avec pour pricipal avantage de permettre la création d’une structure de données effectivement indépendante d’un contexte applicatif
+- mais qui a quand même du sens dans la perspective qui nous intéresse, qui est celle de la topologie de l’exposition
+
+===vvvvvv===
+
+## Le noyau ontologique
+
+Une perspective sur l’exposition basée sur :
+
+- le concept d’*Exhibit* : **objet situé** dans un espace d’exposition
+- une logique spatiale qui définit des **relations topologiques** abstraites permettant :
+  - d’exprimer la disposition spatiale des **objets entre eux**
+  - d’exprimer la disposition des **objets dans l’espace**
+
+/** Notes **/
+
+- Alors comment fonctionne ce modèle : il y a une unité conceptuelle centrale, l’exhibit.
+- Qui est un objet que l’on peut situer dans l’espace d’espace d’exposition (fonction artistique ou technique, donc œuvre ou élément scénographique)
+- Se dote d’un vocabulaire basé sur une logique spatiale...
+- Donc essentiellement on décrit sémantiquement, donc à l’aide des termes du vocabulaire, comment sont positionnés les objets dans l’espace (exemple A devant B)
+- C’est cette conceptualisation que nous souhaitons partager avec la communauté muséologique grâce aux outils du web sémantique.
+
+===vvvvvv===
+
+<!-- .slide: data-background-iframe="https://ouvroir.github.io/display-ontology/" data-background-interactive class="stack" -->
+
+===vvvvvv===
+
+<!-- .slide: data-background-iframe="https://ouvroir.github.io/display-ontology/webvowl/index.html" data-background-interactive class="stack" -->
+
+/** Notes **/
+
+Modèle conceptuel, donc abstrait. Mais concrètement, on a testé avec Feux pâles.
+
+===vvvvvv===
+
+<style>
+  .reveal #credits {
+    position: fixed;
+    bottom: 0;
+    color: #eee;
+    left: 0;
+    font-size: 14px;
+  }
+</style>
+
+<!-- .slide:
+data-background-image="../img/use-case-00-front.jpeg" data-background-size="auto 100%"
+-->
+
+<div id="credits">Photo. : Frédéric Delpech ©&#0160;Claire&#0160;Burrus, Paris / Jan Mot, Bruxelles.</div>
+
+===vvvvvv===
+
+![Multiple sources](../img/divers.png)
+
+/** Notes **/
+
+In our use case
+
+- archival and visual sources are essentials
+- limited constructive evidence (*vs* archeology)
+
+===vvvvvv===
+
+## Définition des espaces d’exposition
+
+`bot:intersectsZone`: Intersecting Zones
+
+<div style="display: flex">
+  <div class="flex-1">
+    <figure>
+      <img data-src="../img/plan-intersections-couloir.png" alt="Détail du plan de l’exposition Feux pâles au CAPC, galerie Foy.">
+      <figcaption>
+        Détail du plan de l’exposition Feux pâles au CAPC, galerie Foy. ©&#0160;Zoë&#0160;Renaudie.
+      </figcaption>
+    </figure>
+  </div>
+  <div class="flex-1">
+    <img src="../img/use-case-graph-071.png">
+  </div>
+</div>
+
+===vvvvvv===
+
+## Définition des espaces d’exposition
+
+`bot:intersectsZone`: Intersecting Zones
+
+<div style="display: flex">
+  <div class="flex-1">
+    <figure>
+      <img data-src="../img/plan-intersections-spaces.png" alt="Détail du plan de l’exposition Feux pâles au CAPC, galerie Foy.">
+      <figcaption>
+        Détail du plan de l’exposition Feux pâles au CAPC, galerie Foy. ©&#0160;Zoë&#0160;Renaudie.
+      </figcaption>
+    </figure>
+  </div>
+  <div class="flex-1">
+    <img src="../img/use-case-graph-07.png">
+  </div>
+</div>
+
+===vvvvvv===
+
+## Définition des espaces d’exposition
+
+`display:hasExhibitionSpace`: Space contains space
+
+<div style="display: flex">
+  <div class="flex-1">
+    <figure>
+      <img data-src="../img/plan-inventaire-01.png" alt="Détail du plan de l’exposition Feux pâles au CAPC, galerie Foy.">
+      <figcaption>
+        Détail du plan de l’exposition Feux pâles au CAPC, galerie Foy. ©&#0160;Zoë&#0160;Renaudie.
+      </figcaption>
+    </figure>
+  </div>
+  <div class="flex-1">
+    <img src="../img/use-case-graph-08.png">
+  </div>
+</div>
+
+===vvvvvv===
+
+## Définition des espaces d’exposition
+
+`display:hasExhibitionSpace`: Space contains space
+
+<div style="display: flex">
+  <div class="flex-1">
+    <figure>
+      <img data-src="../img/plan-inventaire-02.png" alt="Détail du plan de l’exposition Feux pâles au CAPC, galerie Foy.">
+      <figcaption>
+        Détail du plan de l’exposition Feux pâles au CAPC, galerie Foy. ©&#0160;Zoë&#0160;Renaudie.
+      </figcaption>
+    </figure>
+  </div>
+  <div class="flex-1">
+    <img src="../img/use-case-graph-08-2.png">
+  </div>
+</div>
+
+===vvvvvv===
+
+## Définition des espaces d’exposition
+
+`display:adjacentExhibit:`: Spaces share element
+
+<div style="display: flex">
+  <div class="flex-1">
+    <figure>
+      <img data-src="../img/plan-inventaire-03.png" alt="Détail du plan de l’exposition Feux pâles au CAPC, galerie Foy.">
+      <figcaption>
+        Détail du plan de l’exposition Feux pâles au CAPC, galerie Foy. ©&#0160;Zoë&#0160;Renaudie.
+      </figcaption>
+    </figure>
+  </div>
+  <div class="flex-1">
+    <img src="../img/use-case-graph-08-3.png">
+  </div>
+</div>
+
+===vvvvvv===
+
+## Relations topologiques entre exhibits
+
+<figure class="w75">
+  <img data-src="../img/use-case-04-inventaire.png" alt="Salle d'entrée de l’expostion Feux pâles.">
+  <figcaption>
+    Vue de l’exposition Feux pâles (1990), salle 1 “Inventaire du mémorable”. Photo.&#0160;: Frédéric Delpech © ©&#0160;Claire&#0160;Burrus, Paris / Jan Mot, Bruxelles.
+  </figcaption>
+</figure>
+
+===vvvvvv===
+
+## Relations topologiques entre exhibits
+
+`display:Display`: aggregate of exhibits
+
+![Instantiation syntax](../img/use-case-graph-11-1.png)
+
+===vvvvvv===
+
+## Relations topologiques entre exhibits
+
+`display:Display`: aggregate of exhibits
+
+![Instantiation syntax](../img/use-case-graph-11-2.png)
+
+===vvvvvv===
+
+## Relations topologiques entre exhibits
+
+`display:Display`: aggregate of exhibits
+
+![Instantiation syntax](../img/use-case-graph-11-3.png)
+
+===vvvvvv===
+
+## Inférence : enrichir le graphe de données
+
+![Reasoning](../img/use-case-graph-12-1.png)
+
+===vvvvvv===
+
+## Inférence : enrichir le graphe de données
+
+![Reasoning](../img/use-case-graph-12.png)
+
+===vvvvvv===
+
+## Modèle de données
+
+Un modèle de données pour articuler :
+
+- les données structurées par l’ontologie (Display)
+- les métadonnées sur les **œuvres d’art** (CIDOC CRM)
+
+Mais surtout pour :
+
+- faciliter l’utilisation des données dans différents contextes applicatifs grâce à une formalisation idiomatique et documentée (modèle d’API Linked Art)
+
+/** Notes **/
+
+- Finalement, l’élément le plus récent dans l’architecture des données
+- Pour articuler, car ce n’est pas tout de dire que des exhibits sont dans l’espace
+- Quelles sont elles, qui a créé ces œuvres
+- Donc articuler Display avec CIDOC
+- À partir de cette articulation, on peut organiser l’info dans des formats de données qui sont typiquement utilisés en programmation Web
+- Basé sur un modèle d’interface de programmation, Linked Art
+- Et c'est à partir de ces formats de données que l’app travaille!
+
+===>>>>>>===
+
+# L’application Display
+
+===vvvvvv===
+
+## Interface
+
+- Une interface graphique permettant aux historiens de l’art d’alimenter l’ontologie
+- recueillir des informations historiques et formuler des hypothèses
+- générer un rendu de visualisation 3D et simplifié
+
+===vvvvvv===
+
+## Utilisateurs
+
+- le chercheur principal
+- l’auxiliaire de recherche 
+- le commissaire d’exposition
+
+===vvvvvv===
+
+## Analyse des besoins
+
+- Recherche dans des archives d’exposition
+- Documentation lacunaire
+- Comparaison d’accrochages d’une œuvre dans plusieurs projets
+- Préparation d’une exposition
+
+===vvvvvv===
+
+## Objectifs
+
+- Importer des listes d’œuvres directement depuis vos archives.
+- Travailler sur les espaces d’exposition, même si vous ne disposez pas toujours de plans exacts ou complets.
+- Localiser les œuvres dans les espaces, et visualiser comment elles étaient disposées.
+- Créer des hypothèses sur la base des informations disponibles, et explorer différentes configurations possibles.
+
+===vvvvvv===
+
+## Fonctionnalités principales
+
+- Importation et gestion des œuvres mais aussi des sources
+- Modélisation des espaces d’exposition
+- Positionnement des œuvres
+- Visualisation des hypothèses
+
+===>>>>>>===
+
+
+
+===vvvvvv===
+
+## [Tractr](https://www.tractr.net), notre prestataire
+
+![tractr](../img/tractr.png)
+
+===vvvvvv===
+
+## accueil 
+
+![Projet](../img/interface-01.png)
+
+===vvvvvv===
+
+## Capture
+
+![maps](../img/interface-02.png)
+
+===vvvvvv===
+
+## Capture
+
+![maps](../img/interface-03.png)
+
+===vvvvvv===
+
+## Capture
+
+![maps](../img/interface-04.png)
+
+===vvvvvv===
+
+## Capture
+
+![maps](../img/interface-05.png)
+
+===vvvvvv===
+
+## Capture
+
+![maps](../img/interface-06.png)
+
+===vvvvvv===
+
+## Capture
+
+![maps](../img/interface-07.png)
+
+===vvvvvv===
+
+## Capture
+
+![maps](../img/interface-08.png)
+
+===vvvvvv===
+
+## Capture
+
+![visualisation](../img/interface-09.png)
+
+===vvvvvv===
+
+## Démo
+
+[lien](https://mk0w088ccoc088cws0og4ckw.tractr.ca/projects)
