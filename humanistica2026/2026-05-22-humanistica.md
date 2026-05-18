@@ -56,18 +56,18 @@
 ## Introduction et contexte
 
 - Reconstituer des expositions passées avec une documentation lacunaire
-- Le Partenariat CIÉCO et l'Ouvroir
+- Le Partenariat CIÉCO et l’Ouvroir
 - Hypothèse centrale
 
 /** Notes **/
 
-Je travaille avec Emmanuel Chateau-Dutier, directeur scientifique du projet et David Valentine, ontologiste, au sein du Partenariat CIÉCO, Des nouveaux usages des collections dans les musées d'art, qui réunit une vingtaine de chercheurs et six musées canadiens, ainsi qu'un laboratoire de recherche, l'Ouvroir d'histoire de l'art et de muséologie numériques, à l'Université de Montréal. Au sein de ce projet, notre collègue Marie Fraser mène des recherches sur l'histoire des accrochages de collections, c'est pour soutenir ce travail que Display a été développé.
+Je travaille avec Emmanuel Chateau-Dutier, directeur scientifique du projet et David Valentine, ontologiste, au sein du Partenariat CIÉCO, Des nouveaux usages des collections dans les musées d’art, qui réunit une vingtaine de chercheurs et six musées canadiens, ainsi qu’un laboratoire de recherche, l’Ouvroir d’histoire de l’art et de muséologie numériques, à l’Université de Montréal. Au sein de ce projet, notre collègue Marie Fraser mène des recherches sur l’histoire des accrochages de collections, c’est pour soutenir ce travail que Display a été développé.
 
-La question de départ est simple, mais les difficultés pratiques sont considérables : comment reconstituer un accrochage d'exposition quand la documentation est partielle, hétérogène, parfois contradictoire ? On dispose de photographies d'installation, de listes de prêts, de plans architecturaux partiels, de témoignages. Comment tirer parti de ces sources de façon rigoureuse et systématique ?
+La question de départ est simple, mais les difficultés pratiques sont considérables : comment reconstituer un accrochage d’exposition quand la documentation est partielle, hétérogène, parfois contradictoire ? On dispose de photographies d’installation, de listes de prêts, de plans architecturaux partiels, de témoignages. Comment tirer parti de ces sources de façon rigoureuse et systématique ?
 
-Notre hypothèse est qu'une interface web adaptée aux workflows des chercheurs permet à des non-experts du web sémantique de produire des données structurées selon un modèle ontologique formel, avec une qualité comparable à celle obtenue par des méthodes expertes. C'est cette hypothèse que Display cherche à valider. Notre contribution est double : méthodologique, en documentant un processus de design pour rendre le web sémantique accessible aux chercheurs en sciences humaines, et empirique, en le démontrant sur l'exposition Feux pâles.
+Notre hypothèse est qu’une interface web adaptée aux workflows des chercheurs permet à des non-experts du web sémantique de produire des données structurées selon un modèle ontologique formel, avec une qualité comparable à celle obtenue par des méthodes expertes. C’est cette hypothèse que Display cherche à valider. Notre contribution est double : méthodologique, en documentant un processus de design pour rendre le web sémantique accessible aux chercheurs en sciences humaines, et empirique, en le démontrant sur l’exposition Feux pâles.
 
-Je vais vous présenter d'abord la problématique, ensuite la méthodologie du projet, puis l'architecture et les résultats ensemble, et enfin les perspectives.
+Je vais vous présenter d’abord la problématique, ensuite la méthodologie du projet, puis l’architecture et les résultats ensemble, et enfin les perspectives.
 
 ===>>>>>>===
 
@@ -79,57 +79,59 @@ Je vais vous présenter d'abord la problématique, ensuite la méthodologie du p
 
 /** Notes **/
 
-Des institutions comme le MoMA ou la Tate ont mené des projets ambitieux de documentation de l'histoire de leurs expositions. Le MoMA Exhibition History Project documente plus de 3 500 expositions depuis 1929 avec des photographies, communiqués, listes d'œuvres. C'est considérable. Mais ces projets se concentrent sur la mise à disposition de documentation primaire : les relations spatiales entre les œuvres exposées ne font pas l'objet d'une description formelle. Des projets comme Google Arts & Culture ou le Virtual Museum de l'UCLA reconstituent des expositions en 3D, mais sans structurer les données : ce qui limite toute analyse systématique des pratiques d'accrochage.
+Des institutions comme le MoMA ou la Tate ont mené des projets ambitieux de documentation de l’histoire de leurs expositions. Le MoMA Exhibition History Project documente plus de 3 500 expositions depuis 1929 avec des photographies, communiqués, listes d’œuvres. C’est considérable. Mais ces projets se concentrent sur la mise à disposition de documentation primaire : les relations spatiales entre les œuvres exposées ne font pas l’objet d’une description formelle. Des projets comme Google Arts & Culture ou le Virtual Museum de l’UCLA reconstituent des expositions en 3D, mais sans structurer les données : ce qui limite toute analyse systématique des pratiques d’accrochage.
 
-Du côté des modèles documentaires, le CIDOC-CRM offre une ontologie générique orientée événement. Des travaux plus récents comme AAAo ou Onto-Exhibit s'intéressent à des dimensions spécifiques de l'exposition. Mais il n'existe pas encore de modèle spécialisé pour la documentation spatiale des accrochages.
+Du côté des modèles documentaires, le CIDOC-CRM offre une ontologie générique orientée événement. Des travaux plus récents comme AAAo ou Onto-Exhibit s’intéressent à des dimensions spécifiques de l’exposition. Mais il n’existe pas encore de modèle spécialisé pour la documentation spatiale des accrochages.
 
-Ce n'est pas un problème mineur. Les systèmes de gestion de collections permettent de lister les œuvres et les expositions, mais rarement de modéliser où les œuvres étaient, ni comment elles se rapportaient les unes aux autres dans l'espace. Les plans d'accrochage que l'on trouve parfois dans les archives sont des outils de production, ils servent à dimensionner des cimaises, pas à documenter pour la recherche. Display ne vise pas à remplacer ces outils, mais à combler ce vide documentaire du côté de la recherche historique.
+Ce n’est pas un problème mineur. Les systèmes de gestion de collections permettent de lister les œuvres et les expositions, mais rarement de modéliser où les œuvres étaient, ni comment elles se rapportaient les unes aux autres dans l’espace. Les plans d’accrochage que l’on trouve parfois dans les archives sont des outils de production, ils servent à dimensionner des cimaises, pas à documenter pour la recherche. Display ne vise pas à remplacer ces outils, mais à combler ce vide documentaire du côté de la recherche historique.
 
-Le troisième enjeu est celui de l'accessibilité. Le web sémantique offre un potentiel considérable pour la structuration des données culturelles, mais sa complexité technique limite son adoption. Display propose de masquer cette complexité derrière des interfaces pensées pour les chercheurs.
+Le troisième enjeu est celui de l’accessibilité. Le web sémantique offre un potentiel considérable pour la structuration des données culturelles, mais sa complexité technique limite son adoption. Display propose de masquer cette complexité derrière des interfaces pensées pour les chercheurs.
 
 ===>>>>>>===
 
 ## Méthodologie 
 
-- *Feux pâles* (1990, CAPC Bordeaux) comme cas d'étude pilote
-- Trois phases : identification des besoins, modélisation ontologique, développement de l'interface
-- Une approche interdisciplinaire : du terrain vers l'ontologie, de l'ontologie vers l'interface
+- *Feux pâles* (1990, CAPC Bordeaux) comme cas d’étude pilote
+- Trois phases : identification des besoins, modélisation ontologique, développement de l’interface
+- Une approche interdisciplinaire : du terrain vers l’ontologie, de l’ontologie vers l’interface
 
 /** Notes **/
 
-Le développement de Display n'a pas commencé par des spécifications techniques abstraites. Il a commencé sur le terrain, à partir de situations de recherche concrètes. La démarche s'est construite en trois phases.
+Le développement de Display n’a pas commencé par des spécifications techniques abstraites. Il a commencé sur le terrain, à partir de situations de recherche concrètes. La démarche s’est construite en trois phases.
 
-La première phase a consisté à identifier les besoins réels. Nous avons travaillé avec l'équipe de Marie Fraser pour comprendre leurs pratiques de documentation. Mon propre travail de recherche de 2017 sur l'exposition Feux pâles (1990, au CAPC Musée d'art contemporain de Bordeaux) a servi de cas pilote. C'est une exposition collective majeure : 96 œuvres, 82 artistes, une scénographie complexe, et une documentation d'archive riche mais fragmentaire. C'est précisément le type de corpus qui met en évidence les limites des outils existants, et qui permet d'identifier les situations documentaires récurrentes : lacunes, sources contradictoires, nécessité de formuler des hypothèses alternatives.
+La première phase a consisté à identifier les besoins réels. Nous avons travaillé avec l’équipe de Marie Fraser pour comprendre leurs pratiques de documentation. Mon propre travail de recherche de 2017 sur l’exposition Feux pâles (1990, au CAPC Musée d’art contemporain de Bordeaux) a servi de cas pilote. C’est une exposition collective majeure : 96 œuvres, 82 artistes, une scénographie complexe, et une documentation d’archive riche mais fragmentaire. C’est précisément le type de corpus qui met en évidence les limites des outils existants, et qui permet d’identifier les situations documentaires récurrentes : lacunes, sources contradictoires, nécessité de formuler des hypothèses alternatives.
 
-La deuxième phase a porté sur la modélisation formelle. Des ateliers réguliers entre historiens de l'art, spécialistes du web sémantique et développeurs ont permis d'affiner progressivement le modèle ontologique. Vous le savez, cette démarche collaborative est essentielle : l'ontologie doit répondre aux besoins de la recherche tout en maintenant une rigueur formelle compatible avec les standards internationaux.
+La deuxième phase a porté sur la modélisation formelle. Des ateliers réguliers entre historiens de l’art, spécialistes du web sémantique et développeurs ont permis d’affiner progressivement le modèle ontologique. Vous le savez, cette démarche collaborative est essentielle : l’ontologie doit répondre aux besoins de la recherche tout en maintenant une rigueur formelle compatible avec les standards internationaux.
 
-La troisième phase a concerné le développement de l'interface, réalisé avec la société Tractr. Plusieurs cycles de tests utilisateurs ont permis d'ajuster les fonctionnalités et l'ergonomie pour cette première version prototype. Ce processus itératif a révélé l'importance de certains choix : la visualisation en 2D et en 3D, la gestion explicite des hypothèses alternatives, l'annotation directe des sources.
+La troisième phase a concerné le développement de l’interface, réalisé avec la société Tractr. Plusieurs cycles de tests utilisateurs ont permis d’ajuster les fonctionnalités et l’ergonomie pour cette première version prototype. Ce processus itératif a révélé l’importance de certains choix : la visualisation en 2D et en 3D, la gestion explicite des hypothèses alternatives, l’annotation directe des sources.
 
 ===>>>>>>===
 
 ## Display : architecture et démonstration
 
+![alt text](../img/display-app-instantiation.png)
+
 
 ===vvvvvv===
 
-## L'ontologie Display
+## L’ontologie Display
 
-Une conceptualisation de la **topologie de l'exposition** :
+Une conceptualisation de la **topologie de l’exposition** :
 
-- le concept d'*Exhibit* (expôt en français) : objet situé dans un espace d'exposition
+- le concept d’*Exhibit* (expôt en français) : objet situé dans un espace d’exposition
 - des **relations topologiques** abstraites entre objets et entre espaces
 - implémentée en `OWL`, compatible `CIDOC-CRM`, fondée sur `BOT`
 
-Accessible à l'adresse w3id.org/display/0.1.0.
+Accessible à l’adresse w3id.org/display/0.1.0.
 
 
 /** Notes **/
 
-Le cœur du projet est une ontologie de domaine : l'ontologie Display, accessible à l'adresse w3id.org/display/0.1.0.
+Le cœur du projet est une ontologie de domaine : l’ontologie Display, accessible à l’adresse w3id.org/display/0.1.0.
 
-Son unité conceptuelle centrale est l'Exhibit, un objet que l'on peut situer dans un espace d'exposition, qu'il s'agisse d'une œuvre ou d'un élément scénographique. À partir de là, l'ontologie définit un vocabulaire de relations topologiques abstraites qui permettent de décrire comment les objets se positionnent les uns par rapport aux autres, et comment ils se situent dans l'espace : adjacence, contiguïté, vis-à-vis, emboîtement.
+Son unité conceptuelle centrale est l’Exhibit, un objet que l’on peut situer dans un espace d’exposition, qu’il s’agisse d’une œuvre ou d’un élément scénographique. À partir de là, l’ontologie définit un vocabulaire de relations topologiques abstraites qui permettent de décrire comment les objets se positionnent les uns par rapport aux autres, et comment ils se situent dans l’espace : adjacence, contiguïté, vis-à-vis, emboîtement.
 
-Techniquement, elle est exprimée en OWL, ce qui permet d'appliquer une logique de description au modèle. Elle s'appuie sur une spécialisation de la Building Topology Ontology pour la description des espaces, et maintient une compatibilité avec le CIDOC-CRM pour les métadonnées sur les œuvres. Ce choix de standards ouverts garantit l'interopérabilité et la pérennité des données, indépendamment de tout contexte applicatif spécifique.
+Techniquement, elle est exprimée en OWL, ce qui permet d’appliquer une logique de description au modèle. Elle s’appuie sur une spécialisation de la Building Topology Ontology pour la description des espaces, et maintient une compatibilité avec le CIDOC-CRM pour les métadonnées sur les œuvres. Ce choix de standards ouverts garantit l’interopérabilité et la pérennité des données, indépendamment de tout contexte applicatif spécifique.
 
 ===vvvvvv===
 
@@ -141,7 +143,7 @@ Techniquement, elle est exprimée en OWL, ce qui permet d'appliquer une logique 
 
 /** Notes **/
 
-Voici la visualisation de l'ontologie dans WebVOWL. Je ne vais pas m'y attarder, mais elle donne une idée de la structure. Ce qui nous intéresse concrètement, c'est comment ce modèle s'applique à Feux pâles.
+Voici la visualisation de l’ontologie dans WebVOWL. Je ne vais pas m’y attarder, mais elle donne une idée de la structure. Ce qui nous intéresse concrètement, c’est comment ce modèle s’applique à Feux pâles.
 
 ===vvvvvv===
 
@@ -151,19 +153,18 @@ Voici la visualisation de l'ontologie dans WebVOWL. Je ne vais pas m'y attarder,
 
 /** Notes **/
 
-Voici le type de documentation sur lequel nous travaillons : des photographies d'installation, des plans partiels, des listes d'œuvres, des projets scénographiques. Des sources hétérogènes, produites à des moments différents, avec des objectifs différents. C'est à partir de cet ensemble fragmentaire que l'on cherche à reconstituer l'accrochage.
-
+Voici le type de documentation sur lequel nous travaillons : des photographies d’installation, des plans partiels, des listes d’œuvres, des projets scénographiques. Des sources hétérogènes, produites à des moments différents, avec des objectifs différents. C’est à partir de cet ensemble fragmentaire que l’on cherche à reconstituer l’accrochage.
 
 ===vvvvvv===
 
-## Définition des espaces d'exposition
+## Définition des espaces d’exposition
 
-`bot:intersectsZone` : zones qui s'intersectent
+`bot:intersectsZone` : zones qui s’intersectent
 
 <div style="display: flex">
   <div class="flex-1">
     <figure>
-      <img data-src="../img/plan-intersections-couloir.png" alt="Détail du plan de l'exposition Feux pâles au CAPC, galerie Foy.">
+      <img data-src="../img/plan-intersections-couloir.png" alt="Détail du plan de l’exposition Feux pâles au CAPC, galerie Foy.">
       <figcaption>
         Détail du plan, galerie Foy. ©&#0160;Zoë&#0160;Renaudie.
       </figcaption>
@@ -176,18 +177,18 @@ Voici le type de documentation sur lequel nous travaillons : des photographies d
 
 /** Notes **/
 
-La première étape est de modéliser les espaces de l'exposition. Le CAPC a une architecture complexe : des salles communicantes, des couloirs qui traversent plusieurs espaces. La propriété bot:intersectsZone permet de décrire ces zones qui se chevauchent, ici le couloir de la galerie Foy qui intersecte plusieurs salles.
+La première étape est de modéliser les espaces de l’exposition. Le CAPC a une architecture complexe : des salles communicantes, des couloirs qui traversent plusieurs espaces. La propriété bot:intersectsZone permet de décrire ces zones qui se chevauchent, ici le couloir de la galerie Foy qui intersecte plusieurs salles.
 
 ===vvvvvv===
 
-## Définition des espaces d'exposition
+## Définition des espaces d’exposition
 
 `display:hasExhibitionSpace` : espace contient espace
 
 <div style="display: flex">
   <div class="flex-1">
     <figure>
-      <img data-src="../img/plan-inventaire-01.png" alt="Détail du plan de l'exposition Feux pâles au CAPC, galerie Foy.">
+      <img data-src="../img/plan-inventaire-01.png" alt="Détail du plan de l’exposition Feux pâles au CAPC, galerie Foy.">
       <figcaption>
         Détail du plan, galerie Foy. ©&#0160;Zoë&#0160;Renaudie.
       </figcaption>
@@ -200,18 +201,18 @@ La première étape est de modéliser les espaces de l'exposition. Le CAPC a une
 
 /** Notes **/
 
-Ensuite, la relation d'emboîtement : une salle contient des sous-espaces. On peut ainsi décrire la hiérarchie spatiale de l'exposition, du bâtiment jusqu'à l'alcôve ou la cimaise.
+Ensuite, la relation d’emboîtement : une salle contient des sous-espaces. On peut ainsi décrire la hiérarchie spatiale de l’exposition, du bâtiment jusqu’à l’alcôve ou la cimaise.
 
 ===vvvvvv===
 
-## Définition des espaces d'exposition
+## Définition des espaces d’exposition
 
 `display:adjacentExhibit` : espaces partageant un élément
 
 <div style="display: flex">
   <div class="flex-1">
     <figure>
-      <img data-src="../img/plan-inventaire-03.png" alt="Détail du plan de l'exposition Feux pâles au CAPC, galerie Foy.">
+      <img data-src="../img/plan-inventaire-03.png" alt="Détail du plan de l’exposition Feux pâles au CAPC, galerie Foy.">
       <figcaption>
         Détail du plan, galerie Foy. ©&#0160;Zoë&#0160;Renaudie.
       </figcaption>
@@ -224,52 +225,52 @@ Ensuite, la relation d'emboîtement : une salle contient des sous-espaces. On pe
 
 /** Notes **/
 
-Enfin, l'adjacence : deux espaces qui partagent un élément architectural : une cloison, un mur, une porte. Ce vocabulaire topologique permet de décrire la géographie de l'exposition sans avoir besoin de coordonnées précises, ce qui est essentiel quand les plans sont partiels ou absents.
+Enfin, l’adjacence : deux espaces qui partagent un élément architectural : une cloison, un mur, une porte. Ce vocabulaire topologique permet de décrire la géographie de l’exposition sans avoir besoin de coordonnées précises, ce qui est essentiel quand les plans sont partiels ou absents.
 
 ===vvvvvv===
 
 ## Relations topologiques entre exhibits
 
 <figure class="w75">
-  <img data-src="../img/use-case-04-inventaire.png" alt="Salle d'entrée de l'exposition Feux pâles.">
+  <img data-src="../img/use-case-04-inventaire.png" alt="Salle d’entrée de l’exposition Feux pâles.">
   <figcaption>
-    Vue de l'exposition Feux pâles (1990), salle 1 "Inventaire du mémorable". Photo. : Frédéric Delpech ©&#0160;Claire&#0160;Burrus, Paris / Jan Mot, Bruxelles.
+    Vue de l’exposition Feux pâles (1990), salle 1 "Inventaire du mémorable". Photo. : Frédéric Delpech ©&#0160;Claire&#0160;Burrus, Paris / Jan Mot, Bruxelles.
   </figcaption>
 </figure>
 
 /** Notes **/
 
-Passons maintenant aux relations entre les œuvres elles-mêmes. Voici la première salle de Feux pâles, "Inventaire du mémorable". On voit des œuvres disposées sur plusieurs murs, dans un espace ouvert. Comment décrire formellement ces configurations à partir d'une photographie ?
+Passons maintenant aux relations entre les œuvres elles-mêmes. Voici la première salle de Feux pâles, "Inventaire du mémorable". On voit des œuvres disposées sur plusieurs murs, dans un espace ouvert. Comment décrire formellement ces configurations à partir d’une photographie ?
 
 ===vvvvvv===
 
 ## Relations topologiques entre exhibits
 
-`display:Display` : agrégat d'exhibits
+`display:Display` : agrégat d’exhibits
 
 ![Instantiation syntax](../img/use-case-graph-11-1.png)
 
 /** Notes **/
 
-On commence par identifier les exhibits individuels, chaque œuvre visible dans la photographie. Chaque exhibit est une instance de la classe display:Display, qui peut être une œuvre, un ensemble d'œuvres, ou un élément scénographique.
+On commence par identifier les exhibits individuels, chaque œuvre visible dans la photographie. Chaque exhibit est une instance de la classe display: Display, qui peut être une œuvre, un ensemble d’œuvres, ou un élément scénographique.
 
 ===vvvvvv===
 
 ## Relations topologiques entre exhibits
 
-`display:Display` : agrégat d'exhibits
+`display:Display` : agrégat d’exhibits
 
 ![Instantiation syntax](../img/use-case-graph-11-2.png)
 
 /** Notes **/
 
-On décrit ensuite les relations entre ces exhibits : laquelle est à gauche de l'autre, laquelle est face à une autre, lesquelles partagent une même cimaise. Ce sont des relations relatives, pas des coordonnées absolues, ce qui correspond exactement à ce que l'on peut lire dans une photographie d'installation.
+On décrit ensuite les relations entre ces exhibits : laquelle est à gauche de l’autre, laquelle est face à une autre, lesquelles partagent une même cimaise. Ce sont des relations relatives, pas des coordonnées absolues, ce qui correspond exactement à ce que l’on peut lire dans une photographie d’installation.
 
 ===vvvvvv===
 
 ## Relations topologiques entre exhibits
 
-`display:Display` : agrégat d'exhibits
+`display:Display` : agrégat d’exhibits
 
 ![Instantiation syntax](../img/use-case-graph-11-3.png)
 
@@ -285,7 +286,7 @@ On obtient ainsi un graphe de relations entre exhibits, ancré dans les sources 
 
 /** Notes **/
 
-C'est ici que l'ontologie révèle sa valeur ajoutée spécifique. Si je documente qu'une œuvre A est à gauche d'une œuvre B, et que B est à gauche d'une œuvre C, le moteur d'inférence peut déduire automatiquement que A est à gauche de C, une relation que je n'ai pas eu besoin d'encoder explicitement.
+C’est ici que l’ontologie révèle sa valeur ajoutée spécifique. Si je documente qu’une œuvre A est à gauche d’une œuvre B, et que B est à gauche d’une œuvre C, le moteur d’inférence peut déduire automatiquement que A est à gauche de C, une relation que je n’ai pas eu besoin d’encoder explicitement.
 
 ===vvvvvv===
 
@@ -295,15 +296,15 @@ C'est ici que l'ontologie révèle sa valeur ajoutée spécifique. Si je documen
 
 /** Notes **/
 
-Le graphe enrichi par inférence contient donc plus de relations que ce qui a été saisi manuellement. Pour la recherche historique, cela signifie que des relations spatiales implicites dans la documentation, lisibles dans une photographie mais jamais formulées, peuvent être rendues explicites et interrogeables. C'est une forme de raisonnement automatique sur des données incertaines et partielles, ce qui est précisément la situation de la recherche sur les expositions historiques.
+Le graphe enrichi par inférence contient donc plus de relations que ce qui a été saisi manuellement. Pour la recherche historique, cela signifie que des relations spatiales implicites dans la documentation, lisibles dans une photographie mais jamais formulées, peuvent être rendues explicites et interrogeables. C’est une forme de raisonnement automatique sur des données incertaines et partielles, ce qui est précisément la situation de la recherche sur les expositions historiques.
 
 ===vvvvvv===
 
-## Démo : l'interface Display sur *Feux pâles*
+## Démo : l’interface Display sur *Feux pâles*
 
 /** Notes **/
 
-Voyons maintenant ce que tout cela donne du point de vue du chercheur, dans l'interface. 
+Voyons maintenant ce que tout cela donne du point de vue du chercheur, dans l’interface. 
 
 Description de la video
 
@@ -317,30 +318,40 @@ Description de la video
 
 /** Notes **/
 
-L'application de Display au corpus de Feux pâles a permis de valider l'hypothèse centrale sur plusieurs types de situations documentaires : des œuvres dont la position est incertaine, des sources photographiques partielles qui nécessitent une interprétation, des contradictions entre sources. Dans chaque cas, Display a permis de formuler et de documenter plusieurs hypothèses de reconstitution, en explicitant pour chacune les sources mobilisées et le degré de certitude associé.
+L’application de Display au corpus de Feux pâles a permis de valider l’hypothèse centrale sur plusieurs types de situations documentaires : des œuvres dont la position est incertaine, des sources photographiques partielles qui nécessitent une interprétation, des contradictions entre sources. Dans chaque cas, Display a permis de formuler et de documenter plusieurs hypothèses de reconstitution, en explicitant pour chacune les sources mobilisées et le degré de certitude associé.
 
-La visualisation 3D s'est révélée utile non pas comme fin en soi, mais comme outil de comparaison des hypothèses : des implications spatiales qui n'étaient pas immédiatement apparentes dans la documentation archivistique bidimensionnelle sont devenues visibles une fois les configurations modélisées en trois dimensions.
+La visualisation 3D s’est révélée utile non pas comme fin en soi, mais comme outil de comparaison des hypothèses : des implications spatiales qui n’étaient pas immédiatement apparentes dans la documentation archivistique bidimensionnelle sont devenues visibles une fois les configurations modélisées en trois dimensions.
 
-La contribution méthodologique est peut-être la plus importante à long terme. Display démontre qu'il est possible de concevoir une interface qui masque la complexité ontologique sans la trahir, que des chercheurs sans expertise en web sémantique peuvent produire des données sémantiques de qualité si l'interface est pensée à partir de leurs pratiques réelles.
+La contribution méthodologique est peut-être la plus importante à long terme. Display démontre qu’il est possible de concevoir une interface qui masque la complexité ontologique sans la trahir, que des chercheurs sans expertise en web sémantique peuvent produire des données sémantiques de qualité si l’interface est pensée à partir de leurs pratiques réelles.
 
-Du côté de la pérennité, l'utilisation de standards ouverts, OWL, RDF, SPARQL, et le développement en open source garantissent la réutilisabilité de l'infrastructure. La compatibilité avec le CIDOC-CRM et Linked Art assure l'interopérabilité avec les systèmes existants de documentation du patrimoine culturel. Les données produites ne sont pas captives d'une application : elles existent indépendamment de Display.
+Du côté de la pérennité, l’utilisation de standards ouverts, OWL, RDF, SPARQL, et le développement en open source garantissent la réutilisabilité de l’infrastructure. La compatibilité avec le CIDOC-CRM et Linked Art assure l’interopérabilité avec les systèmes existants de documentation du patrimoine culturel. Les données produites ne sont pas captives d’une application : elles existent indépendamment de Display.
 
 ===>>>>>>===
 
 ## Perspectives
 
-- enrichissement du moteur d'inférence, extraction automatique depuis les archives photographiques (IA)
+- enrichissement du moteur d’inférence, extraction automatique depuis les archives photographiques (IA)
 - analyses à grande échelle, identification de patterns curatoriales
-- au-delà de l'accrochage, vers une documentation plus complète de l'expérience expositionnelle
+- @todo sources
+- au-delà de l’accrochage, vers une documentation plus complète de l’expérience expositionnelle
 
 /** Notes **/
 
-Les perspectives de développement s'organisent sur plusieurs horizons.
+Les perspectives de développement s’organisent sur plusieurs horizons.
 
-À court terme, l'enrichissement du moteur d'inférence permettrait des raisonnements spatiaux plus sophistiqués. L'intégration de mécanismes d'intelligence artificielle pour l'extraction automatique d'informations spatiales depuis les photographies d'archives est une piste prometteuse, réduire le temps de saisie est une condition de l'adoption de l'outil.
+À court terme, l’enrichissement du moteur d’inférence permettrait des raisonnements spatiaux plus sophistiqués. L’intégration de mécanismes d’intelligence artificielle pour l’extraction automatique d’informations spatiales depuis les photographies d’archives est une piste prometteuse, réduire le temps de saisie est une condition de l’adoption de l’outil.
 
-À moyen terme, l'accumulation de données structurées sur des accrochages multiples ouvre la voie à des analyses computationnelles que l'on ne peut pas encore mener faute de données : identification de patterns curatoriales, étude de l'évolution des pratiques d'accrochage, comparaisons entre institutions sur des périodes longues.
+À moyen terme, l’accumulation de données structurées sur des accrochages multiples ouvre la voie à des analyses computationnelles que l’on ne peut pas encore mener faute de données : identification de patterns curatoriales, étude de l’évolution des pratiques d’accrochage, comparaisons entre institutions sur des périodes longues.
 
-Je terminerai sur une ouverture qui concerne directement ma recherche doctorale. Display modélise l'accrochage, la dimension spatiale de l'exposition. Mais une exposition n'est pas qu'un accrochage. Elle est aussi un dispositif discursif, une séquence temporelle, un ensemble de décisions curatoriales, une expérience de visite. L'enjeu des prochains développements est d'étendre le modèle vers ces autres dimensions, sans perdre la rigueur formelle qui fait la valeur du travail déjà accompli.
+@todo Sources sur le web sem. nquad synthaxe de rdf star. david a explorer : reification : pouvoir attribuer une assertion à quelqu'un. pour simplifier le dev de l'app. Sachant qu'on avait a géré les graphS et l'enjeu des inférences. 
+
+Je terminerai sur une ouverture qui concerne directement ma recherche doctorale. Display modélise l’accrochage, la dimension spatiale de l’exposition. Mais une exposition n’est pas qu’un accrochage. Elle est aussi un dispositif discursif, une séquence temporelle, un ensemble de décisions curatoriales, une expérience de visite. L’enjeu des prochains développements est d’étendre le modèle vers ces autres dimensions, sans perdre la rigueur formelle qui fait la valeur du travail déjà accompli.
 
 Je vous remercie.
+
+
+@todo captures
+
+
+API json ld mais on dispose d'un sparql endpoint. lui meme requeter par l'outil.
+REST : modelisation du web. pour l'api. toutes les choses sont des ressources, qui recoive des identifiant, ces sources sont des representations. Construction d'app hypermediatiques. CRAFTS utilise API REST. on accede aux ressources par le protocole HTTP. On renvoie du jsonld. 
