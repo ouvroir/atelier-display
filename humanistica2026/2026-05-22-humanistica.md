@@ -1,4 +1,5 @@
 <!-- ’ -->
+
 <style display="none">
 .flex {
   display: flex;
@@ -116,19 +117,85 @@ Avantage du moteur d’inférence
 
 L’architecture de Display repose sur trois composantes principales : une ontologie de domaine exprimée en OWL, un serveur de données exploitant les technologies du web sémantique, et un client web orienté vers la saisie et la visualisation.
 
-### **L’ontologie Display : modéliser l’espace expographique**
+===vvvvvv===
+
+## L’ontologie Display : perspective spatiale sur l’exposition
+
+Une conceptualisation de la **topologie de l’exposition** mise en œuvre avec les technologies du **web sémantique** :
+
+- `RDF` : principes des données liées
+- `OWL` : structuration des connaissaces et logique formelle
+
+/** Notes **/
+
+- Le modèle conceptuel en question, c’est l’ontologie Display.
+- Qui est une conceptualisation de la topologie de l’exposition, sur laquelle je reviens...
+- Et implémenté avec les techno du web sem :
+  - rdf : gérer la publication et le partage des données 
+  - owl : établir la structure conceptuelle, et d’appliquer une logique de descrition à notre modèle, permettant d’effectuer des inférences, dans l’espoir d’enrichir les informations qui sont extraites des sources historiques. 
 
 Le modèle documentaire occupe une place centrale dans l’infrastructure. L’ontologie Display, accessible à l’adresse https://w3id.org/display/0.1.0, permet de décrire de manière explicite et formelle les caractéristiques d’un accrochage ou d’une exposition : proximité et contiguïté des œuvres, relations de vis-à-vis, configurations spatiales et séquences de visite. Tout en maintenant une compatibilité avec le modèle conceptuel de référence du CIDOC-CRM, nous avons privilégié une modélisation centrée sur les relations spatiales en nous appuyant sur une spécialisation de la Building Topology Ontology (BOT).
 
 Ce choix de modélisation présente plusieurs avantages significatifs. D’abord, il permet l’enregistrement structuré de l’information historique concernant les accrochages tout en proposant des solutions pour représenter l’incertitude et les lacunes documentaires, situation courante dans la recherche sur les expositions passées. Ensuite, un travail particulier sur les relations topologiques permet de tirer pleinement parti des mécanismes d’inférence propres aux logiques de description. L’utilisation d’un modèle ontologique offre ainsi la possibilité de déduire automatiquement de nouveaux faits à partir des données existantes, enrichissant la documentation au-delà des seules informations explicitement saisies.
 
-### **Infrastructure serveur : exploitation computationnelle des données**
+===vvvvvv===
+
+## L’ontologie Display : perspective spatiale sur l’exposition
+
+Création d’un modèle de documentation indépendant de tout type de visualisation.
+
+Basé sur les avantages de l’utilisation des standards du web :
+
+- **interopérabilité** des données
+- **pérennisation** des données
+- **indépendance** des contextes applicatifs
+
+/** Notes **/
+
+- Ça nous permet, donc, de créer un modèle de documentation indépendant de tout type de visualisation
+- Et j’irais même jusqu’à dire indépendant de tout type d’application spécifique
+- Parce que tout ça repose sur des technologies **standardisées**, qui jouissent d’un statut normatif très stable, avec de la ducumentation complète, détaillée et publique.
+- Avec pour pricipal avantage de permettre la création d’une structure de données effectivement indépendante d’un contexte applicatif
+- mais qui a quand même du sens dans la perspective qui nous intéresse, qui est celle de la topologie de l’exposition
+
+===vvvvvv===
+
+## Le noyau ontologique
+
+Une perspective sur l’exposition basée sur :
+
+- le concept d’*Exhibit* : **objet situé** dans un espace d’exposition
+- une logique spatiale qui définit des **relations topologiques** abstraites permettant :
+  - d’exprimer la disposition spatiale des **objets entre eux**
+  - d’exprimer la disposition des **objets dans l’espace**
+
+/** Notes **/
+
+- Alors comment fonctionne ce modèle : il y a une unité conceptuelle centrale, l’exhibit.
+- Qui est un objet que l’on peut situer dans l’espace d’espace d’exposition (fonction artistique ou technique, donc œuvre ou élément scénographique)
+- Se dote d’un vocabulaire basé sur une logique spatiale...
+- Donc essentiellement on décrit sémantiquement, donc à l’aide des termes du vocabulaire, comment sont positionnés les objets dans l’espace (exemple A devant B)
+- C’est cette conceptualisation que nous souhaitons partager avec la communauté muséologique grâce aux outils du web sémantique.
+
+===vvvvvv===
+
+<!-- .slide: data-background-iframe="https://ouvroir.github.io/display-ontology/" data-background-interactive class="stack" -->
+
+===vvvvvv===
+
+## **Infrastructure serveur : exploitation computationnelle des données**
+
+/** Notes **/
 
 L’architecture serveur s’appuie sur l’implémentation d’un SPARQL endpoint utilisant le framework Apache Jena, couplé à un moteur d’inférence qui matérialise le potentiel computationnel de l’ontologie. L’utilisation de CRAFTS (Customizable REST API For TripleStores) a permis de créer une API REST facilitant l’accès aux données par l’intermédiaire de JSON-LD, avec des patrons proches de ceux proposés par le modèle Linked Art. Cette approche garantit l’interopérabilité des données avec l’écosystème plus large des données culturelles liées, tout en offrant une interface de programmation moderne et accessible.
 
 Cette infrastructure permet non seulement de stocker et interroger les données d’exposition, mais aussi d’effectuer des raisonnements automatiques sur ces données. Par exemple, si une œuvre A est documentée comme étant à gauche d’une œuvre B, et que B est à gauche de C, le moteur d’inférence peut déduire automatiquement les relations spatiales transitives pertinentes, enrichissant ainsi la base de connaissances sans intervention manuelle.
 
-### **Client web : interfaces pour la saisie et la visualisation**
+===vvvvvv===
+
+## **Client web : interfaces pour la saisie et la visualisation**
+
+/** Notes **/
 
 Côté client, l’environnement s’appuie sur une base de données PostgreSQL via Supabase pour la gestion intermédiaire des données et des utilisateurs. L’interface graphique en JavaScript articule trois vues distinctes pour la saisie et la visualisation : une scène 3D développée avec Three.js permettant la visualisation spatiale des accrochages, un module de traitement des sources documentaires facilitant l’analyse des archives et photographies d’époque, et une vue de données structurées offrant un accès direct aux triplets RDF sous-jacents.
 
@@ -175,65 +242,7 @@ Dans le contexte de la recherche historique : incertitudes et information parce
 
 L’élaboration repose sur trois briques.
 
-===vvvvvv===
 
-## L’ontologie Display : perspective spatiale sur l’exposition
-
-Une conceptualisation de la **topologie de l’exposition** mise en œuvre avec les technologies du **web sémantique** :
-
-- `RDF` : principes des données liées
-- `OWL` : structuration des connaissaces et logique formelle
-
-/** Notes **/
-
-- Le modèle conceptuel en question, c’est l’ontologie Display.
-- Qui est une conceptualisation de la topologie de l’exposition, sur laquelle je reviens...
-- Et implémenté avec les techno du web sem :
-  - rdf : gérer la publication et le partage des données 
-  - owl : établir la structure conceptuelle, et d’appliquer une logique de descrition à notre modèle, permettant d’effectuer des inférences, dans l’espoir d’enrichir les informations qui sont extraites des sources historiques. 
-
-===vvvvvv===
-
-## L’ontologie Display : perspective spatiale sur l’exposition
-
-Création d’un modèle de documentation indépendant de tout type de visualisation.
-
-Basé sur les avantages de l’utilisation des standards du web :
-
-- **interopérabilité** des données
-- **pérennisation** des données
-- **indépendance** des contextes applicatifs
-
-/** Notes **/
-
-- Ça nous permet, donc, de créer un modèle de documentation indépendant de tout type de visualisation
-- Et j’irais même jusqu’à dire indépendant de tout type d’application spécifique
-- Parce que tout ça repose sur des technologies **standardisées**, qui jouissent d’un statut normatif très stable, avec de la ducumentation complète, détaillée et publique.
-- Avec pour pricipal avantage de permettre la création d’une structure de données effectivement indépendante d’un contexte applicatif
-- mais qui a quand même du sens dans la perspective qui nous intéresse, qui est celle de la topologie de l’exposition
-
-===vvvvvv===
-
-## Le noyau ontologique
-
-Une perspective sur l’exposition basée sur :
-
-- le concept d’*Exhibit* : **objet situé** dans un espace d’exposition
-- une logique spatiale qui définit des **relations topologiques** abstraites permettant :
-  - d’exprimer la disposition spatiale des **objets entre eux**
-  - d’exprimer la disposition des **objets dans l’espace**
-
-/** Notes **/
-
-- Alors comment fonctionne ce modèle : il y a une unité conceptuelle centrale, l’exhibit.
-- Qui est un objet que l’on peut situer dans l’espace d’espace d’exposition (fonction artistique ou technique, donc œuvre ou élément scénographique)
-- Se dote d’un vocabulaire basé sur une logique spatiale...
-- Donc essentiellement on décrit sémantiquement, donc à l’aide des termes du vocabulaire, comment sont positionnés les objets dans l’espace (exemple A devant B)
-- C’est cette conceptualisation que nous souhaitons partager avec la communauté muséologique grâce aux outils du web sémantique.
-
-===vvvvvv===
-
-<!-- .slide: data-background-iframe="https://ouvroir.github.io/display-ontology/" data-background-interactive class="stack" -->
 
 ===vvvvvv===
 
