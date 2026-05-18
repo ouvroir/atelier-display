@@ -83,7 +83,7 @@ Des institutions comme le MoMA ou la Tate ont mené des projets ambitieux de doc
 
 Du côté des modèles documentaires, le CIDOC-CRM offre une ontologie générique orientée événement. Des travaux plus récents comme AAAo ou Onto-Exhibit s'intéressent à des dimensions spécifiques de l'exposition. Mais il n'existe pas encore de modèle spécialisé pour la documentation spatiale des accrochages.
 
-Ce n'est pas un problème mineur. Les systèmes de gestion de collections permettent de lister les œuvres et les expositions, mais pas de modéliser où les œuvres étaient, ni comment elles se rapportaient les unes aux autres dans l'espace. Les plans d'accrochage que l'on trouve parfois dans les archives sont des outils de production, ils servent à dimensionner des cimaises, pas à documenter pour la recherche. Display ne vise pas à remplacer ces outils, mais à combler ce vide documentaire du côté de la recherche historique.
+Ce n'est pas un problème mineur. Les systèmes de gestion de collections permettent de lister les œuvres et les expositions, mais rarement de modéliser où les œuvres étaient, ni comment elles se rapportaient les unes aux autres dans l'espace. Les plans d'accrochage que l'on trouve parfois dans les archives sont des outils de production, ils servent à dimensionner des cimaises, pas à documenter pour la recherche. Display ne vise pas à remplacer ces outils, mais à combler ce vide documentaire du côté de la recherche historique.
 
 Le troisième enjeu est celui de l'accessibilité. Le web sémantique offre un potentiel considérable pour la structuration des données culturelles, mais sa complexité technique limite son adoption. Display propose de masquer cette complexité derrière des interfaces pensées pour les chercheurs.
 
@@ -101,13 +101,14 @@ Le développement de Display n'a pas commencé par des spécifications technique
 
 La première phase a consisté à identifier les besoins réels. Nous avons travaillé avec l'équipe de Marie Fraser pour comprendre leurs pratiques de documentation. Mon propre travail de recherche de 2017 sur l'exposition Feux pâles (1990, au CAPC Musée d'art contemporain de Bordeaux) a servi de cas pilote. C'est une exposition collective majeure : 96 œuvres, 82 artistes, une scénographie complexe, et une documentation d'archive riche mais fragmentaire. C'est précisément le type de corpus qui met en évidence les limites des outils existants, et qui permet d'identifier les situations documentaires récurrentes : lacunes, sources contradictoires, nécessité de formuler des hypothèses alternatives.
 
-La deuxième phase a porté sur la modélisation formelle. Des ateliers réguliers entre historiens de l'art, spécialistes du web sémantique et développeurs ont permis d'affiner progressivement le modèle ontologique. Cette démarche collaborative est essentielle : l'ontologie doit répondre aux besoins de la recherche tout en maintenant une rigueur formelle compatible avec les standards internationaux.
+La deuxième phase a porté sur la modélisation formelle. Des ateliers réguliers entre historiens de l'art, spécialistes du web sémantique et développeurs ont permis d'affiner progressivement le modèle ontologique. Vous le savez, cette démarche collaborative est essentielle : l'ontologie doit répondre aux besoins de la recherche tout en maintenant une rigueur formelle compatible avec les standards internationaux.
 
-La troisième phase a concerné le développement de l'interface, réalisé avec la société Tractr. Plusieurs cycles de prototypage et de tests utilisateurs ont permis d'ajuster les fonctionnalités et l'ergonomie. Ce processus itératif a révélé l'importance de certains choix : la visualisation simultanée en 2D et en 3D, la gestion explicite des hypothèses alternatives, l'annotation directe des sources.
+La troisième phase a concerné le développement de l'interface, réalisé avec la société Tractr. Plusieurs cycles de tests utilisateurs ont permis d'ajuster les fonctionnalités et l'ergonomie pour cette première version prototype. Ce processus itératif a révélé l'importance de certains choix : la visualisation en 2D et en 3D, la gestion explicite des hypothèses alternatives, l'annotation directe des sources.
 
 ===>>>>>>===
 
 ## Display : architecture et démonstration
+
 
 ===vvvvvv===
 
@@ -115,9 +116,12 @@ La troisième phase a concerné le développement de l'interface, réalisé avec
 
 Une conceptualisation de la **topologie de l'exposition** :
 
-- le concept d'*Exhibit* : objet situé dans un espace d'exposition
+- le concept d'*Exhibit* (expôt en français) : objet situé dans un espace d'exposition
 - des **relations topologiques** abstraites entre objets et entre espaces
 - implémentée en `OWL`, compatible `CIDOC-CRM`, fondée sur `BOT`
+
+Accessible à l'adresse w3id.org/display/0.1.0.
+
 
 /** Notes **/
 
@@ -129,12 +133,15 @@ Techniquement, elle est exprimée en OWL, ce qui permet d'appliquer une logique 
 
 ===vvvvvv===
 
+<!-- .slide: data-background-iframe="https://ouvroir.github.io/display-ontology/" data-background-interactive class="stack" -->
+
+===vvvvvv===
+
 <!-- .slide: data-background-iframe="https://ouvroir.github.io/display-ontology/webvowl/index.html" data-background-interactive class="stack" -->
 
 /** Notes **/
 
 Voici la visualisation de l'ontologie dans WebVOWL. Je ne vais pas m'y attarder, mais elle donne une idée de la structure. Ce qui nous intéresse concrètement, c'est comment ce modèle s'applique à Feux pâles.
-
 
 ===vvvvvv===
 
@@ -232,7 +239,7 @@ Enfin, l'adjacence : deux espaces qui partagent un élément architectural : une
 
 /** Notes **/
 
-Passons maintenant aux relations entre les œuvres elles-mêmes. Voici la salle d'entrée de Feux pâles, "Inventaire du mémorable". On voit des œuvres disposées sur plusieurs murs, dans un espace ouvert. Comment décrire formellement ces configurations à partir d'une photographie ?
+Passons maintenant aux relations entre les œuvres elles-mêmes. Voici la première salle de Feux pâles, "Inventaire du mémorable". On voit des œuvres disposées sur plusieurs murs, dans un espace ouvert. Comment décrire formellement ces configurations à partir d'une photographie ?
 
 ===vvvvvv===
 
