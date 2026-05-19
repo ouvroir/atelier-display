@@ -111,6 +111,9 @@ La troisième phase a concerné le développement de l’interface, réalisé av
 
 ![alt text](../img/display-app-instantiation.png)
 
+/** Notes **/
+
+L'architecture de l'application repose sur l'implémentation d'un point d'accès SPARQL à l'aide du framework Apache Jena, associé à un moteur d'inférence. L'utilisation de CRAFTS a permis la création d'une API REST pour l'accès aux données via JSON-LD, selon des modèles proches de ceux proposés par Linked Art. Le client web propose trois vues distinctes pour la saisie et la visualisation des données : une scène 3D développée avec Three.js, un module de traitement des sources documentaires et une vue des données structurées.La conception de l'interface s'inspire des méthodes employées par les chercheurs pour documenter les expositions et permet d'explorer différentes hypothèses en s'appuyant sur le modèle de données.
 
 ===vvvvvv===
 
