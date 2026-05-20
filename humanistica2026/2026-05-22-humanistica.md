@@ -113,7 +113,7 @@ La troisième phase a concerné le développement de l’interface, réalisé av
 
 /** Notes **/
 
-L'architecture de l'application repose sur l'implémentation d'un point d'accès SPARQL à l'aide du framework Apache Jena, associé à un moteur d'inférence. L'utilisation de CRAFTS a permis la création d'une API REST pour l'accès aux données via JSON-LD, selon des modèles proches de ceux proposés par Linked Art. Le client web propose trois vues distinctes pour la saisie et la visualisation des données : une scène 3D développée avec Three.js, un module de traitement des sources documentaires et une vue des données structurées.La conception de l'interface s'inspire des méthodes employées par les chercheurs pour documenter les expositions et permet d'explorer différentes hypothèses en s'appuyant sur le modèle de données.
+L'architecture de l'application repose sur l'implémentation d'un point d'accès SPARQL à l'aide du framework Apache Jena, associé à un moteur d'inférence. L'utilisation de CRAFTS a permis la création d'une API REST pour l'accès aux données via JSON-LD, selon des modèles proches de ceux proposés par Linked Art. Le client web propose trois vues distinctes pour la saisie et la visualisation des données : une scène 3D développée avec Three.js, un module de traitement des sources documentaires et une vue des données structurées.La conception de l'interface s'inspire des méthodes employées par les chercheurs pour documenter les expositions et permet d'explorer différentes hypothèses en s'appuyant sur le modèle de données. Je ne pourrais pas tout vous montrer mais si vous souhaitez en savoir plus contactez nous ou venez à notre atelier prise en main à DH cet été. 
 
 ===vvvvvv===
 
@@ -121,7 +121,7 @@ L'architecture de l'application repose sur l'implémentation d'un point d'accès
 
 Une conceptualisation de la **topologie de l’exposition** :
 
-- le concept d’*Exhibit* (expôt en français) : objet situé dans un espace d’exposition
+- le concept d’*Exhibit* (expôt) : objet situé dans un espace d’exposition
 - des **relations topologiques** abstraites entre objets et entre espaces
 - implémentée en `OWL`, compatible `CIDOC-CRM`, fondée sur `BOT`
 
