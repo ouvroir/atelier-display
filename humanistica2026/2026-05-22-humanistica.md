@@ -303,17 +303,19 @@ Le graphe enrichi par inférence contient donc plus de relations que ce qui a é
 
 ## L’interface Display sur *Feux pâles*
 
-
-<video controls width="80%">
-  <source src="../img/demo.webm" type="video/webm">
-</video>
-
+<iframe src="https://vimeo.com/1194468845?share=copy&fl=sv&fe=ci" 
+  width="80%" height="450" frameborder="0" allowfullscreen>
+</iframe>
 
 /** Notes **/
 
 Voyons maintenant ce que tout cela donne du point de vue du chercheur, dans l’interface. 
 
 Je ne pourrais pas tout vous montrer mais si vous souhaitez en savoir plus contactez nous ou venez à notre atelier prise en main à la conférence DH de cet été en Corée. 
+
+<video controls width="80%">
+  <source src="../img/demo.webm" type="video/webm">
+</video>
 
 ===>>>>>>===
 
