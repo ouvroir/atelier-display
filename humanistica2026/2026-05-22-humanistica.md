@@ -104,7 +104,7 @@ Enfin, une troisième phase a concerné le développement de l’interface, réa
 
 ===>>>>>>===
 
-## Display : architecture et démonstration
+## Display
 
 ![alt text](../img/display-app-instantiation.png)
 
