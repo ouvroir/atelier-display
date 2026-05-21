@@ -51,61 +51,48 @@
   </div>
 </div>
 
-===>>>>>>===
-
-## Introduction et contexte
-
-- Reconstituer des expositions passées avec une documentation lacunaire
-- Le Partenariat CIÉCO et l’Ouvroir
-- Hypothèse centrale
 
 /** Notes **/
 
-Je travaille avec Emmanuel Chateau-Dutier, directeur scientifique du projet et David Valentine, ontologiste, au sein du Partenariat CIÉCO, Des nouveaux usages des collections dans les musées d’art, qui réunit une vingtaine de chercheurs et six musées canadiens, ainsi qu’un laboratoire de recherche, l’Ouvroir d’histoire de l’art et de muséologie numériques, à l’Université de Montréal. Au sein de ce projet, notre collègue Marie Fraser mène des recherches sur l’histoire des accrochages de collections, c’est pour soutenir ce travail que Display a été développé.
+Le projet Display propose une infrastructure sémantique pour la documentation structurée des accrochages d’exposition. Il est développé au sein de l’Ouvroir d’histoire de l’art et de muséologie numériques sous la direction scientifique d’Emmanuel Château-Dutier, j’en ai été cheffe de projet et David Valentine l’ontologiste. Cette réalisation est conduite dans le cadre du Partenariat CIÉCO, *Des nouveaux usages des collections dans les musées d’art*  qui réunit une vingtaine de chercheurs et six musées canadiens. Marie Fraser y dirige notamment un axe de recherche sur l’histoire des accrochages de collections pour le soutien les outils que nous présentons ont été développé.
 
-<!-- Le projet Display propose une infrastructure sémantique pour la documentation structurée des accrochages d’exposition. Il est développé au sein de l’Ouvroir d’histoire de l’art et de muséologie numériques sous la direction scientifique d’Emmanuel Château-Dutier, j’en ai été cheffe de projet et David Valentine l’ontologiste. Cette réalisation est conduite dans le cadre du Partenariat CIÉCO, *Des nouveaux usages des collections dans les musées d’art*  qui réunit une vingtaine de chercheurs et six musées canadiens. Marie Fraser y dirige notamment un axe de recherche sur l’histoire des accrochages de collections pour le soutien les outils que nous présentons ont été développé. -->
+La question de départ est simple, mais les difficultés pratiques sont considérables : comment reconstituer un accrochage d’exposition alors que souvent leur documentation est lacunaire, hétérogène, et parfois même contradictoire ? On dispose de photographies d’installation, de listes de prêts, de plans architecturaux partiels, de témoignages. Comment tirer parti de ces sources de façon rigoureuse et systématique ?
 
-La question de départ est simple, mais les difficultés pratiques sont considérables : comment reconstituer un accrochage d’exposition quand la documentation est partielle, hétérogène, parfois contradictoire ? On dispose de photographies d’installation, de listes de prêts, de plans architecturaux partiels, de témoignages. Comment tirer parti de ces sources de façon rigoureuse et systématique ?
+Nous formulons l’hypothèse qu’une interface web adaptée aux workflows des chercheurs peut permettre à des non-expetrs du web sémantique de produire des données structuréers selon un modèle ontologique formel, avec une qualité comparable à celle obtenue par des méthodes expertes. Notre contribution est double : méthodologique, en documentant un processus de design pour rendre le web sémantique accessible aux chercheurs en sciences humaines, et empirique, en le démontrant sur l’exposition *Feux pâles*.
 
-<!-- La question de départ est simple, mais les difficultés pratiques sont considérables : comment reconstituer un accrochage d’exposition alors que souvent leur documentation est lacunaire, hétérogène, et parfois même contradictoire ? On dispose de photographies d’installation, de listes de prêts, de plans architecturaux partiels, de témoignages. Comment tirer parti de ces sources de façon rigoureuse et systématique ? -->
-
-Notre hypothèse est qu’une interface web adaptée aux workflows des chercheurs permet à des non-experts du web sémantique de produire des données structurées selon un modèle ontologique formel, avec une qualité comparable à celle obtenue par des méthodes expertes. C’est cette hypothèse que Display cherche à valider. Notre contribution est double : méthodologique, en documentant un processus de design pour rendre le web sémantique accessible aux chercheurs en sciences humaines, et empirique, en le démontrant sur l’exposition Feux pâles.
-
-<!-- Nous formulons l’hypothèse qu’une interface web adaptée aux workflows des chercheurs peut permettre à des non-expetrs du web sémantique de produire des données structuréers selon un modèle ontologique formel, avec une qualité comparable à celle obtenue par des méthodes expertes. Notre contribution est double : méthodologique, en documentant un processus de design pour rendre le web sémantique accessible aux chercheurs en sciences humaines, et empirique, en le démontrant sur l’exposition *Feux pâles*. -->
-
-Je vais vous présenter d’abord la problématique, ensuite la méthodologie du projet, puis l’architecture et les résultats ensemble, et enfin les perspectives.
+Je vais vous présenter d’abord la problématique, ensuite la méthodologie du projet, puis l’architecture et les résultats, et enfin les perspectives.
 
 ===>>>>>>===
 
 ## Problématique
 
+
+![alt text](../img/problematique.png)
+
+
+/** Notes **/
+
 - Documentation existante : riche mais non structurée
 - Absence de modèle pour la spatialité des accrochages
 - Inaccessibilité du web sémantique pour les chercheurs en SHS
 
-/** Notes **/
+Ces dernières années, des institutions comme le MoMA ou la Tate ont mené des projets ambitieux de documentation de l’histoire de leurs expositions. Le MoMA Exhibition History Project documente plus de 3 500 expositions depuis 1929 avec des photographies, communiqués, listes d’œuvres. Avec le Google Arts & Culture Lab a notamment utilisé un algorithme pour analyser plus de 30 000 photos d'expositions, à la recherche de correspondances avec les plus de 65 000 œuvres de notre collection en ligne. Au total, plus de 20 000 œuvres ont été identifiées dans ces images. C’est considérable. Mais ces projets se concentrent sur la mise à disposition de documentation primaire : les relations spatiales entre les œuvres exposées ne font pas l’objet d’une description formelle. Des projets comme le Virtual Museum de l’UCLA reconstituent des expositions en 3D, mais sans structurer les données : ce qui limite toute analyse systématique des pratiques d’accrochage.
 
-Ces dernières années, des institutions comme le MoMA ou la Tate ont mené des projets ambitieux de documentation de l’histoire de leurs expositions. Le MoMA Exhibition History Project documente plus de 3 500 expositions depuis 1929 avec des photographies, communiqués, listes d’œuvres. C’est considérable. Mais ces projets se concentrent sur la mise à disposition de documentation primaire : les relations spatiales entre les œuvres exposées ne font pas l’objet d’une description formelle. Des projets comme Google Arts & Culture ou le Virtual Museum de l’UCLA reconstituent des expositions en 3D, mais sans structurer les données : ce qui limite toute analyse systématique des pratiques d’accrochage.
+Du côté des modèles documentaires, le CIDOC-CRM offre une ontologie générique orientée événement. Des travaux plus récents comme Onto-Exhibit s’intéressent à des dimensions spécifiques de l’exposition. Mais il n’existait pas encore de modèle spécialisé pour la documentation spatiale des accrochages.
 
-<!-- @rmq je pense qu’il faudrait sans doute indiquer à quel point l’objectif n’est pas pour nous de proposer une représentation 3D mimétique, mais plutôt de pouvoir travailler sur la documentation en utilisant un modèle formel. -->
+Ce n’est pas un problème mineur. Les systèmes de gestion de collections permettent de lister les œuvres et les expositions, mais rarement de modéliser où les œuvres étaient, ni comment elles se rapportaient les unes aux autres dans l’espace. Les plans d’accrochage que l’on trouve parfois dans les archives sont des outils de production, ils servent à dimensionner des cimaises, pas à documenter pour la recherche. Display ne vise pas à remplacer cette documentation, ni à faire une 3D mimétique mais à combler des besoins du côté de la recherche historique en raisonnant sur une documentation souvent lacunaire et parfois contradictoire.
 
-Du côté des modèles documentaires, le CIDOC-CRM offre une ontologie générique orientée événement. Des travaux plus récents comme AAAo ou Onto-Exhibit s’intéressent à des dimensions spécifiques de l’exposition. Mais il n’existait pas encore de modèle spécialisé pour la documentation spatiale des accrochages.
-
-Ce n’est pas un problème mineur. Les systèmes de gestion de collections permettent de lister les œuvres et les expositions, mais rarement de modéliser où les œuvres étaient, ni comment elles se rapportaient les unes aux autres dans l’espace. Les plans d’accrochage que l’on trouve parfois dans les archives sont des outils de production, ils servent à dimensionner des cimaises, pas à documenter pour la recherche. Display ne vise pas à remplacer cette documentation, mais à combler des besoins du côté de la recherche historique en raisonnant sur une documentation souvent lacunaire et parfois contradictoire.
-
-Le troisième enjeu est celui de l’accessibilité. Le web sémantique offre un potentiel considérable pour la structuration des données culturelles, mais sa complexité technique limite son adoption. Display propose de masquer cette complexité derrière des interfaces pensées pour les chercheurs.
+Le troisième enjeu est celui de l’accessibilité. Le web sémantique offre un potentiel considérable pour la structuration des données culturelles, mais sa complexité technique limite son adoption. Display propose de masquer (sans effacer) cette complexité derrière des interfaces pensées pour les chercheurs.
 
 ===>>>>>>===
 
 ## Méthodologie 
 
-- *Feux pâles* (1990, CAPC Bordeaux) comme cas d’étude pilote
-- Trois phases : identification des besoins, modélisation ontologique, développement de l’interface
-- Une approche interdisciplinaire : du terrain vers l’ontologie, de l’ontologie vers l’interface
+![alt text](../img/process.png)
 
 /** Notes **/
 
-Le développement de Display n’a pas commencé par des spécifications techniques abstraites. Il a commencé sur le terrain, à partir de situations de recherche concrètes. La démarche s’est construite en trois phases.
+Le développement de Display n’a pas commencé par des spécifications techniques abstraites. Il a commencé sur le terrain, à partir de situations de recherche concrètes. La démarche s’est construite en trois phases qui me semble plutôt classique, du terrain vers l’ontologie, de l’ontologie vers l’interface.
 
 La première phase a consisté à identifier les besoins réels. Nous avons travaillé avec l’équipe de Marie Fraser pour comprendre leurs pratiques de documentation. Mon propre travail de recherche de 2017 sur l’exposition *Feux pâles* (1990, au CAPC Musée d’art contemporain de Bordeaux) a servi de cas pilote. C’est une exposition collective majeure : 96 œuvres, 82 artistes, une scénographie complexe, et une documentation d’archive riche mais fragmentaire. C’est précisément le type de corpus qui met en évidence les limites des outils existants, et qui permet d’identifier les situations documentaires récurrentes : lacunes, sources contradictoires, nécessité de formuler des hypothèses alternatives.
 
@@ -156,7 +143,7 @@ Techniquement, cette ontologie est exprimée en OWL, ce qui permet d’appliquer
 
 /** Notes **/
 
-Voici la visualisation de l’ontologie dans WebVOWL. Je ne vais pas m’y attarder, mais elle donne une idée de la structure. Ce qui nous intéresse concrètement, c’est comment ce modèle s’applique à Feux pâles.
+Voici la visualisation de l’ontologie dans WebVOWL. Je ne vais pas m’y attarder, mais elle donne une idée de la structure. Ce qui nous intéresse concrètement, c’est comment ce modèle s’applique à Feux pâles
 
 ===vvvvvv===
 
@@ -167,8 +154,6 @@ Voici la visualisation de l’ontologie dans WebVOWL. Je ne vais pas m’y attar
 /** Notes **/
 
 Voici le type de documentation sur lequel nous travaillons : des photographies d’installation, des plans partiels, des listes d’œuvres, des projets scénographiques. Des sources hétérogènes, produites à des moments différents, avec des objectifs différents. C’est à partir de cet ensemble fragmentaire que l’on cherche à reconstituer l’accrochage.
-
-<!-- @todo donner peut être une rapide indication sur l’exposition auteur date, lieu -->
 
 ===vvvvvv===
 
@@ -355,11 +340,11 @@ Du côté de la pérennité, l’utilisation de standards ouverts, OWL, RDF, SPA
 
 /** Notes **/
 
-Les perspectives de développement s’organisent sur plusieurs horizons.
+L'objectif était de créer un proof of concept. Les perspectives de développement s’organisent sur plusieurs horizons.
 
 À court terme, l’enrichissement du moteur d’inférence permettrait des raisonnements spatiaux plus sophistiqués. L’intégration de mécanismes d’intelligence artificielle pour l’extraction automatique d’informations spatiales depuis les photographies d’archives est une piste prometteuse, réduire le temps de saisie est une condition de l’adoption de l’outil et nécessite encore quelques ajustements.
 
-À moyen terme, l’accumulation de données structurées sur des accrochages multiples ouvre la voie à des analyses computationnelles que l’on ne peut pas encore mener faute de données : identification de patterns curatoriaux<!-- @rmq ici comme dans la dia j’ai corrigé curatorials par curatoriaux, mais je manque peut-être qqch -->, étude de l’évolution des pratiques d’accrochage, comparaisons entre institutions sur des périodes longues.
+À moyen terme, l’accumulation de données structurées sur des accrochages multiples ouvre la voie à des analyses computationnelles que l’on ne peut pas encore mener faute de données : identification de patterns curatoriaux, étude de l’évolution des pratiques d’accrochage, comparaisons entre institutions sur des périodes longues.
 
 L’utilisation de RDF-Star (RDF*) a été explorée afin de pouvoir renseigner la source des informations enregistrées de manière granulaire. Mais pour simplifier le développement d’une première version de l’application, il a été décidé de plutôt se focaliser sur les versions de l’exposition traitées avec des graphes nommés et sur le moteur d’inférence.
 
@@ -368,8 +353,5 @@ Je terminerai sur une ouverture qui concerne directement ma recherche doctorale.
 Je vous remercie.
 
 
-@todo captures
-
-
-API json ld mais on dispose d'un sparql endpoint. lui meme requeter par l'outil.
+API json ld mais on dispose d'un sparql endpoint. lui meme requeté par l'outil.
 REST : modelisation du web. pour l'api. toutes les choses sont des ressources, qui recoive des identifiant, ces sources sont des representations. Construction d'app hypermediatiques. CRAFTS utilise API REST. on accede aux ressources par le protocole HTTP. On renvoie du jsonld. 
