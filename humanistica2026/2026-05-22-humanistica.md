@@ -56,13 +56,21 @@
 
 Le projet Display propose une infrastructure sémantique pour la documentation structurée des accrochages d’exposition. Il est développé au sein de l’Ouvroir d’histoire de l’art et de muséologie numériques sous la direction scientifique d’Emmanuel Château-Dutier, j’en ai été cheffe de projet et David Valentine l’ontologiste. Cette réalisation est conduite dans le cadre du Partenariat CIÉCO, *Des nouveaux usages des collections dans les musées d’art*  qui réunit une vingtaine de chercheurs et six musées canadiens. Marie Fraser y dirige notamment un axe de recherche sur l’histoire des accrochages de collections, pour lequel cet outil a été développé. 
 
+===>>>>>>===
+
+## Problématique
+
+Comment reconstituer un accrochage d’exposition alors que souvent leur documentation est lacunaire, hétérogène, et parfois même contradictoire ? Comment tirer parti de ces sources de façon rigoureuse et systématique ?
+
+/** Notes **/
+
 La question de départ est simple, mais les difficultés pratiques sont considérables : comment reconstituer un accrochage d’exposition alors que souvent leur documentation est lacunaire, hétérogène, et parfois même contradictoire ? Comment tirer parti de ces sources de façon rigoureuse et systématique ?
 
 Nous formulons l’hypothèse qu’une interface web adaptée aux workflows des chercheurs peut permettre à des non-experts du web sémantique de produire des données structurées selon un modèle ontologique formel, avec une qualité comparable à celle obtenue par des méthodes expertes. Notre contribution est double : méthodologique, en documentant un processus de design pour rendre le web sémantique accessible aux chercheurs en sciences humaines, et empirique, en le démontrant sur l’exposition *Feux pâles*.
 
-Je vais vous présenter d’abord la problématique, ensuite la méthodologie du projet, puis l’architecture et les résultats, et enfin les perspectives.
+Je vais vous présenter d’abord la problématique, ensuite la méthodologie du projet, l’architecture et les résultats, et enfin les perspectives.
 
-===>>>>>>===
+===vvvvvv===
 
 ## Problématique
 
