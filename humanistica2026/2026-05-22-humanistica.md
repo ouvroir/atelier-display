@@ -322,6 +322,14 @@ Je ne pourrais pas tout vous montrer mais si vous souhaitez en savoir plus conta
   width="80%" height="450" frameborder="0" allowfullscreen>
 </iframe>
 
+===vvvvvv===
+
+## L’interface Display sur *Feux pâles*
+
+<video controls width="80%">
+  <source src="../img/demo-compressed.mp4" type="video/mp4">
+</video>
+
 ===>>>>>>===
 
 ## Résultats et bilan
